@@ -1,0 +1,86 @@
+.about {
+	h2, h3, h4, p {
+		text-align: center;
+		font-family: $roboto;
+	} 
+	.secret-sauce {
+		img {
+			display: block;
+		}
+	}
+	.mission-values {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		.text-block {
+			min-height: 400px;
+			p {
+				font-size: 12px;
+				padding-left: 15%;
+				padding-right: 15%;
+			}
+		}
+	}
+	.secret-sauce {
+		padding: 70px 0;
+		h3 {
+			font-size: 1.5rem;
+			margin-top: 20px;
+		}
+		p {
+				font-size: 12px;
+			}
+	}
+	.winning-culture {
+		margin-top: 70px;
+		img {
+			display: block;
+			max-width: 800px;
+		}
+	}
+}
+
+.locks {
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 50px;
+	font-family: $roboto;
+	p {
+		margin-bottom: 0;
+	}
+	.lock {
+		height: 300px;
+	  width: 70%;
+	  margin: 0 auto;
+	  font-size: 85px;
+	  color: #fff;
+	  span {
+	  	display: block;
+	  	margin-top: 40px;
+	  	line-height: .7;
+	  	font-size: 110px;
+	  }
+	  &.grey {
+	  	background: #000;  	
+	  	i {
+	  		display: block;
+	  		color: $smashtech-yellow;
+	  	}
+	  }
+	  &.yellow {
+	  	background: $smashtech-yellow;
+	  	i {
+	  		display: block;
+	  		color: #000;
+	  	}
+	  }
+	  &.black {
+	  	background: #000;
+	  	i {
+	  		display: block;
+	  	}
+	  }
+	}
+}
+
+
+

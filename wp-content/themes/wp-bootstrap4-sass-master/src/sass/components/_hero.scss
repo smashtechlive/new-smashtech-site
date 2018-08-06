@@ -1,0 +1,28 @@
+.hero {
+	text-align: center;
+	color: #fff;
+	min-height: 500px;
+	width: 100%;
+	h1 {
+		font-family: $roboto;
+		padding-top: 150px;
+		display: inline-block;
+		&:after {
+			content: '';
+			width: 50%;
+			background: $smashtech-yellow;
+			height: 5px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	p {
+	  padding-left: 20%;
+	  padding-right: 20%;
+	  margin-top: 20px;
+	}
+	i {
+		font-size: 30px;
+		color: $smashtech-yellow;
+	}
+}
