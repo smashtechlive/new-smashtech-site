@@ -5,17 +5,19 @@
 		
 				<!-- section -->
 
-			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="hero" style="background: url('<?php echo get_template_directory_uri(); ?>/img/DSC01462.jpg');">
-							<h1>OUR BRANDS</h1>
-							<p>We believe that self-love, body positivity, and confidence is the foundation to a healthy and active lifestyle and hope that our dedication to providing premium, all-natural products will help you get there. At SkinnyFit, we believe that healthy is beautiful, just like you.</p>
-							<i class="fa fa-chevron-down"></i>
-						</div>
+			<?php if (have_posts()): while (have_posts()) : the_post(); $hero = get_field('hero');	
+					if ($hero): ?>
+						<div class="row">
+							<div class="col">
+								<div class="hero" style="background: url('<?= $hero[image][url] ?>');">
+									<h1><?= $hero[title_label] ?></h1>
+									<p><?= $hero[paragraph_content] ?></p>
+									<i class="fa fa-chevron-down"></i>
+								</div>
 
-					</div><!-- .col -->
-				</div><!-- .row -->
+							</div><!-- .col -->
+						</div><!-- .row -->
+					<? endif; ?>
 
 				<div class="row locks">
 					<div class="col-sm-4">
