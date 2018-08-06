@@ -13,6 +13,14 @@
 		margin-bottom: 20px;
 		.text-block {
 			min-height: 400px;
+			text-align: center;
+			h2{
+				display: inline-block;
+				&:after {
+					@include orange-border;
+				}
+			}
+			
 			p {
 				font-size: 12px;
 				padding-left: 15%;
