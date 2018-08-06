@@ -9,7 +9,7 @@
 					$hero = get_field('hero');	
 					if ($hero): ?>
 						<div class="row">
-							<div class="col">
+							<div class="col no-pad">
 								<div class="hero" style="background: url('<?= $hero[image][url] ?>');">
 									<h1><?= $hero[title_label] ?></h1>
 									<p><?= $hero[paragraph_content] ?></p>
