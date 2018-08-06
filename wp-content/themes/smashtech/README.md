@@ -1,6 +1,6 @@
-# wp-bootstrap4-sass
+# Smashtech-wp-theme
 A clean slate Wordpress theme template with Bootstrap(4), Sass, and a Webpack config with Babel.
-*This can be a decent starting point for simple theme development.*
+
 
 ## Installation
 
