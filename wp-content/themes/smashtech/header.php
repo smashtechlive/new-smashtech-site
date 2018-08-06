@@ -20,7 +20,7 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
+		<div class="smashtech">
 
 			<!-- header -->
 			<header class="header clear">
