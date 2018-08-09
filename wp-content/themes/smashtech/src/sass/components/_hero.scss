@@ -34,4 +34,11 @@
 	.img-fluid {
 		width: 100%;
 	}
+	.header-section {
+		p {
+			padding-left: 20%;
+			padding-right: 20%;
+			color: $text-grey;
+		}
+	}
 }

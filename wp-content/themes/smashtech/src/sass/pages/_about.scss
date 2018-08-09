@@ -92,7 +92,7 @@
 
 ol.timeline {
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 60px auto;
 	position: relative;
 	li {
 		list-style: none;
@@ -163,6 +163,16 @@ ol.timeline {
 
 	}
 
+}
+
+
+.founders {
+	.content-area {
+		border-bottom: 2px solid $smashtech-grey;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-bottom: 60px;
+	}
 }
 
 

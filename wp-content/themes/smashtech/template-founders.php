@@ -21,8 +21,14 @@
 					<? endif; ?>
 
 				<div class="row">
-					<div class="col">
+					<div class="col text-center content-area">
 						<? the_content(); ?>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<h3 class="text-center">THE SMASHTECH</h3>
 					</div>
 				</div>
 
@@ -61,8 +67,8 @@
 						    				$body_copy =get_sub_field('body_copy');
 						    				$dflex = 'd-flex';
 						    				$col = 
-						    					'<div class="align-self-center text-center">'.
-							    					'<h2>'.$headline.'</h2>'.
+						    					'<div class="header-section align-self-center text-center">'.
+							    					'<h2 class="header-border">'.$headline.'</h2>'.
 							    					'<p>'.$body_copy.'</p>'.
 							    				'</div>';
 						    			}

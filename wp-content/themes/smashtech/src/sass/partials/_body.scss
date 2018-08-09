@@ -9,6 +9,17 @@ body {
 	padding-top: 56px;
 }
 
+h2,h3,h4,h5,h6 {
+	font-family: $roboto;
+}
 .grey-bg {
 	background: #F8F8F8;
+}
+
+.header-border {
+	font-family: $roboto;
+	display: inline-block;
+	&:after {
+		@include orange-border;
+	}
 }
