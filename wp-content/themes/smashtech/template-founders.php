@@ -45,35 +45,38 @@
 	   		<?	endwhile;
 		    	endif; ?>
 				</ol>
-				<? if( have_rows('row') ):
-			    while ( have_rows('row') ) : the_row(); ?>
-			    		<div class="row">	
-					    	<? if (have_rows('block')) :
-					    		while (have_rows('block')) : the_row(); 
-					    			if (get_sub_field('media') == 'Image') {
-					    				$image = get_sub_field('image');
-					    				$col = '<img src="'.$image[url].'" class="img-fluid">';
-					    				$dflex = '';
-					    			} else {
-					    				$headline = get_sub_field('headline');
-					    				$body_copy =get_sub_field('body_copy');
-					    				$dflex = 'd-flex';
-					    				$col = 
-					    					'<div class="align-self-center text-center">'.
-						    					'<h2>'.$headline.'</h2>'.
-						    					'<p>'.$body_copy.'</p>'.
-						    				'</div>';
-					    			}
-					    	?>
-					    		<div class="col <?= $dflex ?> no-pad">
-					    			<?= $col ?>
-					    		</div>
-					    	<?	endwhile;
-					    	endif; ?>
-			        </div><!-- .row -->
-			    <? endwhile;
-
-					else :
+				<? if( have_rows('row') ): ?>
+			  		<div class="page-builder">
+			  	<?  while ( have_rows('row') ) : the_row(); ?>
+			    		
+				    		<div class="row">	
+						    	<? if (have_rows('block')) :
+						    		while (have_rows('block')) : the_row(); 
+						    			if (get_sub_field('media') == 'Image') {
+						    				$image = get_sub_field('image');
+						    				$col = '<img src="'.$image[url].'" class="img-fluid">';
+						    				$dflex = '';
+						    			} else {
+						    				$headline = get_sub_field('headline');
+						    				$body_copy =get_sub_field('body_copy');
+						    				$dflex = 'd-flex';
+						    				$col = 
+						    					'<div class="align-self-center text-center">'.
+							    					'<h2>'.$headline.'</h2>'.
+							    					'<p>'.$body_copy.'</p>'.
+							    				'</div>';
+						    			}
+						    	?>
+						    		<div class="col <?= $dflex ?> no-pad">
+						    			<?= $col ?>
+						    		</div>
+						    	<?	endwhile;
+						    	endif; ?>
+				        </div><!-- .row -->
+				      
+			    <? endwhile; ?>
+			    	</div><!-- .page-builder -->
+					<? else :
 
 			    // no rows found
 			    

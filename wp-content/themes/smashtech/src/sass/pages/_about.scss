@@ -140,6 +140,7 @@ ol.timeline {
 			  position: absolute;
 		    top: 25px;
   			right: 30px;
+  			max-width: 90%;
 			}
 			&:after {
 				content: '';
@@ -149,7 +150,7 @@ ol.timeline {
 				position: absolute;
 				border-radius: 50%;
 			  right: -15px;
-  			top: 35px;
+  			top: 35px; 
 			}
 		}
 
