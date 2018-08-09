@@ -72,7 +72,7 @@
 				</div><!-- .secret-sauce -->
 
 				<div class="row">
-					<div class="col">
+					<div class="col no-pad">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/about_smashtech.png" class="img-fluid">
 					</div><!-- .col -->
 				</div><!-- .row -->

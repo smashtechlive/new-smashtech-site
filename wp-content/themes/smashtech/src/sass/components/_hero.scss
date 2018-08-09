@@ -1,8 +1,9 @@
 .hero {
 	text-align: center;
 	color: #fff;
-	min-height: 500px;
+	min-height: 600px;
 	width: 100%;
+	position: relative;
 	h1 {
 		font-family: $roboto;
 		padding-top: 150px;
@@ -24,5 +25,13 @@
 	i {
 		font-size: 30px;
 		color: $smashtech-yellow;
+		position: absolute;
+		bottom: 30px;
+	}
+}
+
+.page-builder {
+	.img-fluid {
+		width: 100%;
 	}
 }
