@@ -444,23 +444,23 @@ add_shortcode('wpbootstrapsass_shortcode_demo_2', 'wpbootstrapsass_shortcode_dem
 // Create 1 Custom Post type for a Demo, called custom-post-type
 function create_post_type_custom_post_type_demo()
 {
-    register_taxonomy_for_object_type('category', 'custom-post-type'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'custom-post-type');
-    register_post_type('custom-post-type', // Register Custom Post Type
+    register_taxonomy_for_object_type('category', 'careers'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'careers');
+    register_post_type('careers', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('WP Bootstrap Sass Custom Post', 'wpbootstrapsass'), // Rename these to suit
-            'singular_name' => __('WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
+            'name' => __('Careers', 'wpbootstrapsass'), // Rename these to suit
+            'singular_name' => __('Career', 'wpbootstrapsass'),
             'add_new' => __('Add New', 'wpbootstrapsass'),
-            'add_new_item' => __('Add New WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
+            'add_new_item' => __('Add New Career', 'wpbootstrapsass'),
             'edit' => __('Edit', 'wpbootstrapsass'),
-            'edit_item' => __('Edit WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
-            'new_item' => __('New WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
-            'view' => __('View WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
-            'view_item' => __('View WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
-            'search_items' => __('Search WP Bootstrap Sass Custom Post', 'wpbootstrapsass'),
-            'not_found' => __('No WP Bootstrap Sass Custom Posts found', 'wpbootstrapsass'),
-            'not_found_in_trash' => __('No WP Bootstrap Sass Custom Posts found in Trash', 'wpbootstrapsass')
+            'edit_item' => __('Edit Career', 'wpbootstrapsass'),
+            'new_item' => __('New Career', 'wpbootstrapsass'),
+            'view' => __('View Career', 'wpbootstrapsass'),
+            'view_item' => __('View Career Post', 'wpbootstrapsass'),
+            'search_items' => __('Search Careers', 'wpbootstrapsass'),
+            'not_found' => __('No Careers found', 'wpbootstrapsass'),
+            'not_found_in_trash' => __('No Careers found in Trash', 'wpbootstrapsass')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

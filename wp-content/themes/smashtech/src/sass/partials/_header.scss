@@ -4,10 +4,36 @@
  */
 
 header {
+	
 	.navbar-brand {
 		max-width: 200px;
 	}
 	.fixed-top {
 		background: #fff;
+		padding-left: 0;
+		padding-right: 0;
+		.navbar-brand {
+		  @include media-breakpoint-down(md) {
+		  	margin: 0 auto;
+		  }
+		}
+
+		button.navbar-toggler {
+			position: absolute;
+			top: 13px;
+			left: 15px;
+			border: none;
+		}
+		.navbar-collapse {
+			@include media-breakpoint-down(md) {
+				background: rgba(0, 0, 0, 0.8);
+				opacity: .8;
+				.nav-link {
+					color: #fff !important;
+					padding: 30px;
+				}
+			}
+			
+		}
 	}
 }
