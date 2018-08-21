@@ -1,8 +1,11 @@
 .about {
-	h2, h3, h4, p {
+  h3, h4, p {
 		text-align: center;
 		font-family: $roboto;
 	} 
+	h2 {
+		font-family: $muli;
+	}
 	.secret-sauce {
 		img {
 			display: block;
@@ -22,20 +25,26 @@
 			}
 			
 			p {
-				font-size: 12px;
+				font-size: 20px;
 				padding-left: 15%;
 				padding-right: 15%;
 			}
 		}
 	}
 	.secret-sauce {
-		padding: 70px 0;
+		padding: 60px 0;
+		h2 {
+			margin-bottom: 60px;
+			font-size: 42px;
+			text-align: center;
+			font-stretch: condensed;
+		}
 		h3 {
 			font-size: 1.5rem;
 			margin-top: 20px;
 		}
 		p {
-				font-size: 12px;
+				font-size: 20px;
 			}
 	}
 	.winning-culture {
@@ -94,6 +103,9 @@ ol.timeline {
 	max-width: 1000px;
 	margin: 60px auto;
 	position: relative;
+	@include media-breakpoint-up(md) {
+		padding: 0 145px;
+	}
 	li {
 		list-style: none;
 		border-right: 1px solid $smashtech-grey;
@@ -173,6 +185,51 @@ ol.timeline {
 		padding-bottom: 30px;
 		margin-bottom: 60px;
 	}
+	.header-border {
+		font-size: 42px;
+
+	}
+}
+
+
+.careers-single {
+	.post-header {
+		margin-top: 20px; 
+		margin-bottom: 20px;
+		h2 {
+			text-transform: uppercase;
+		}
+		.apply-now {
+			text-align: right;
+			@include media-breakpoint-down(md) {
+				text-align: left;
+			}
+		}
+	}	
+}
+
+.careers {
+	.page-builder {
+		.header-section {
+			.header-border {
+				text-align: left;
+				&:after {
+					content: none;
+				}
+			}
+			p {
+				text-align: left;
+				padding: 0;
+			}
+		}
+		
+		
+	}
+
+	.list-open-careers {
+		margin-top: 60px;
+	}
+	
 }
 
 

@@ -26,3 +26,18 @@
 	padding-left: 0;
 	padding-right: 0;
 }
+
+.bottom-border {
+  border-bottom: $bottom-border;
+}
+
+.btn-yellow {
+  background: $smashtech-yellow;
+  color: #000;
+  text-transform: uppercase;
+  padding: 6px 20px;
+}
+
+.full-width {
+  width: 100%;
+}

@@ -9,3 +9,26 @@
 li.dropdown:hover > .dropdown-menu {
     display: block;
 }
+
+.navbar-nav {
+	
+	.nav-link {
+		@include media-breakpoint-up(md) {
+			&:after {
+				content: '';
+				height: 5px;
+				margin: 0 auto;
+				background: #fff;
+				display: block;
+				width: 50%;
+			}
+			&:hover {
+				&:after {
+					background: #FFD627;
+				}
+			}
+		}
+		
+		
+	}
+} 
