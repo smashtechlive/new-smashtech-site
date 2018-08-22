@@ -6,10 +6,8 @@
 	position: relative;
 	background-size: cover;
 	h1 {
-		font-family: $muli;
 		padding-top: 150px;
 		display: inline-block;
-		font-size: 50px;
 		&:after {
 			content: '';
 			width: 50%;
@@ -25,6 +23,7 @@
 	  margin-top: 20px;
 	  font-size: $roboto;
 	  font-size: 20px;
+	  color: #fff;
 	}
 	i {
 		font-size: 30px;
