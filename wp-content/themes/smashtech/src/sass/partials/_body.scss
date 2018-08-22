@@ -8,10 +8,21 @@
 body {
 	padding-top: 56px;
 }
-
+h1 {
+	font-family: $roboto;
+	font-size: 3rem;
+}
+h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	color: $black;
+	font-weight: $condensed;
+}
 h2,h3,h4,h5,h6 {
 	font-family: $roboto;
+	color: $black;
 }
+
 .grey-bg {
 	background: #F8F8F8;
 }
@@ -24,6 +35,8 @@ h2,h3,h4,h5,h6 {
 	}
 }
 
-p {
-	font-size: 20px;
+p, div, span, ul, li {
+	font-size: 1rem;
+	font-family: $roboto;
+	color: $text-grey; 
 }
