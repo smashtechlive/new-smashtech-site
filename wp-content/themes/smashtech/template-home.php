@@ -31,7 +31,7 @@
 					<div class="container mb-3">
 						<div class="row">
 							<div class="col-sm-4">
-								<p class="blockquote">SEE WHY WE ARE <span class="yellow">THE BEST COMPANY</span> TO WORK FOR</p>
+								<p class="blockquote mt-2">SEE WHY WE ARE <span class="yellow">THE BEST COMPANY</span> TO WORK FOR</p>
 							</div><!-- .col -->
 							<div class="col">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/hp_group.png" class="img-fluid">
@@ -138,7 +138,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
-								<h2>SEE WHAT'S GOING ON</h2>
+								<h2 class="mb-2">SEE WHAT'S GOING ON</h2>
 							</div><!-- .col -->
 						</div><!-- .row -->
 						<div class="row">

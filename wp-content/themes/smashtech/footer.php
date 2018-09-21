@@ -14,7 +14,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-6">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid" style="margin-right: 20px;">
 							2015-2018 Smashtech. All rights reserved.
 						</div><!-- .col -->
 					</div>
