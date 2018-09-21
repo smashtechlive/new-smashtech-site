@@ -1,7 +1,6 @@
 .about {
   h3, h4, p {
 		text-align: center;
-		font-family: $roboto;
 	} 
 	.secret-sauce {
 		img {
@@ -61,15 +60,19 @@
 	  width: 70%;
 	  margin: 0 auto;
 	  font-size: 85px;
-	  color: #fff;
 	  span {
 	  	display: block;
 	  	margin-top: 40px;
-	  	line-height: .7;
-	  	font-size: 110px;
+	  	line-height: .777;
+	  	font-size: 170px;
+	  	color: #fff;
+	  	font-family: $condensed;
+	  }
+	  i {
+	  	font-size: 100px;
 	  }
 	  &.grey {
-	  	background: #000;  	
+	  	background: #808080;  	
 	  	i {
 	  		display: block;
 	  		color: $smashtech-yellow;
@@ -86,6 +89,7 @@
 	  	background: #000;
 	  	i {
 	  		display: block;
+	  		color: #fff;
 	  	}
 	  }
 	}

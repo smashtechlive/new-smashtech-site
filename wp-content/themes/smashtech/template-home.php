@@ -14,7 +14,7 @@
 								  				$title = get_sub_field('title');
 								  				$copy = get_sub_field('copy');
 								  	?> 							
-						    			<div class="swiper-slide" style="background: url('<?= $bg[url] ?>') no-repeat;">
+						    			<div class="swiper-slide" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
 			    							<h1><?= $title ?></h1>
 			    							<p><?= $copy ?></p>
 			    							<p><a href="/" class="btn btn-yellow">Learn more ></a></p>
@@ -28,7 +28,7 @@
 		    </div><!-- .container-fluid -->
 				<? else : endif; ?>
 				<section class="mt-3">
-					<div class="container ">
+					<div class="container mb-3">
 						<div class="row">
 							<div class="col-sm-4">
 								<p class="blockquote">SEE WHY WE ARE <span class="yellow">THE BEST COMPANY</span> TO WORK FOR</p>
@@ -84,7 +84,7 @@
 
 						<div class="row mt-5">
 							<div class="col text-center">
-								<h3 class="orange-border text-center">FOUNDERS</h3>
+								<h2 class="orange-border text-center">FOUNDERS</h2>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid">
 								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
 								<p class="text-center"><small>CEO and Co-Founders</small></p>
@@ -134,7 +134,7 @@
 
 						
 
-				<div class="newest-blogs">
+				<div class="newest-blogs mt-5">
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">

@@ -27,8 +27,8 @@
 								<span>1</span>
 							</div>
 						</div><!-- .lock -->
-						<p><strong>CONFIDENTIAL</strong></p>
-						<p>coming soon</p>
+						<h3>CONFIDENTIAL BRAND</h3>
+						<p>Coming Soon</p>
 					</div><!-- .col -->
 					<div class="col-sm-4">
 						<div class="lock yellow d-flex justify-content-center">
@@ -37,8 +37,8 @@
 								<span>2</span>
 							</div>
 						</div><!-- .lock -->
-						<p><strong>CONFIDENTIAL</strong></p>
-						<p>coming soon</p>
+						<h3>CONFIDENTIAL BRAND</h3>
+						<p>Coming Soon</p>
 					</div><!-- .col -->
 					<div class="col-sm-4">
 						<div class="lock black d-flex justify-content-center">
@@ -47,8 +47,8 @@
 								<span>3</span>
 							</div>
 						</div><!-- .lock -->
-						<p><strong>CONFIDENTIAL</strong></p>
-						<p>coming soon</p>
+						<h3>CONFIDENTIAL BRAND</h3>
+						<p>Coming Soon</p>
 					</div><!-- .col -->
 				</div><!-- .row -->
 

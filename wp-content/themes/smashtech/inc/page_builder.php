@@ -29,7 +29,7 @@
 			    				$col = 
 			    					'<div class="content-widget text-center">'.
 				    					'<img src="'.$image[url].'" class="mx-auto d-block">'.
-				    					'<h2>'.$headline.'</h2>'.
+				    					'<h3>'.$headline.'</h3>'.
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';
 			    			} else {

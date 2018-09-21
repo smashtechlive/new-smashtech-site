@@ -16,14 +16,15 @@
 	.blockquote {
 		font-size: 25px;
 		color: #000;
-	  padding: 0 40px;
+	  padding: 0 40px 0 0;
+	  font-family: $condensed;
 	  span {
 	  	color: $smashtech-yellow;
 	  	font-size: 25px;
 	  }
 	}
 	section {
-		border-bottom: 2px solid $smashtech-grey;
+		border-bottom: 2px solid $smashtech-grey; 
 	}
 	.fa-chevron-down {
 		font-size: 40px;
@@ -31,10 +32,6 @@
 	}
 	.content-area {
 		line-height: 2;
-	}
-	h2 {
-		font-weight: 100;
-		font-family: $roboto;
 	}
 	h3 {
 		display: inline-block;
