@@ -138,7 +138,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="mb-2">SEE WHAT'S GOING ON</h2>
+								<h2 class="mb-5">SEE WHAT'S GOING ON</h2>
 							</div><!-- .col -->
 						</div><!-- .row -->
 						<div class="row">
