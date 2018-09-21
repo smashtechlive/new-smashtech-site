@@ -209,21 +209,23 @@ ol.timeline {
 		.header-section {
 			.header-border {
 				text-align: left;
+				display: block;
 				&:after {
 					content: none;
 				}
 			}
 			p {
-				text-align: left;
+				text-align: left;  
 				padding: 0;
 			}
 		}
-		
-		
 	}
 
 	.list-open-careers {
 		margin-top: 60px;
+		a {
+			color: $text-grey;
+		}
 	}
 	
 }

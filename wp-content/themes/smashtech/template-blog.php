@@ -11,12 +11,13 @@
 	<? if (have_posts()): while (have_posts()) : the_post(); ?>
 		<?
 			$featured_blog = get_field('featured_blog');
+			$date = new DateTime($featured_blog->post_date);
 			$trending_blogs = get_field('trending_blogs');
 			$smash_pick = get_field('smash_pick');
 
-			//pr($trending_blogs);
+			//pr($featured_blog);
 		?>
-		<div class="grey-bg">
+		<div class="grey-bg blog-section">
 			<div class="container ">
 				<div class="row">
 					<div class="col col-sm-6">
@@ -25,19 +26,20 @@
 						</a>
 					</div><!-- .col -->
 					<div class="col col-sm-6">
+						<p class="post-date"><small><?= $date->format("F j, Y") ?></small></p>
 						<h2><?= $featured_blog->post_title ?></h2>
 						<p><?= $featured_blog->post_excerpt ?></p>
 						<p><a href="<?= $featured_blog->guid ?>" class="btn btn-yellow">read more ></a></p>
 					</div><!-- .col -->
 				</div><!-- .row -->
-				
+
 			</div>
 		</div><!-- .gre-bg -->
 
 		<div class="latest-blogs blog-section">
 			<div class="container">
 				<div class="row">
-					<div class="col"><p><small>Latest</small></p></div><!-- .col -->
+					<div class="col"><p><small>LATEST</small></p></div><!-- .col -->
 				</div><!-- .row -->
 				<div class="row">
 
@@ -66,7 +68,7 @@
 		<div class="trending blog-section">
 			<div class="container ">
 				<div class="row">
-					<div class="col"><p><small>Trending This</small></p></div><!-- .col -->
+					<div class="col"><p><small>TRENDING THIS</small></p></div><!-- .col -->
 				</div><!-- .row -->
 				<div class="row">
 					<? foreach ($trending_blogs as $trending_blog) { ?>
@@ -85,7 +87,7 @@
 		<div class="smash-picks blog-section">
 			<div class="container ">
 				<div class="row">
-					<div class="col"><p><small>Smash Pick</small></p></div><!-- .col -->
+					<div class="col"><p><small>SMASH PICK</small></p></div><!-- .col -->
 				</div><!-- .row -->
 				<div class="row">
 					<div class="col col-sm-6">

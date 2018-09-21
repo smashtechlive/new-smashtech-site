@@ -9,7 +9,7 @@ body {
 	padding-top: 65px;
 }
 h1 {
-	font-family: $roboto;
+	font-family: $condensed;
 	font-size: 3rem;
 	color: $black;
 }
@@ -29,7 +29,6 @@ h3,h4,h5,h6 {
 }
 
 .header-border {
-	font-family: $roboto;
 	display: inline-block;
 	&:after {
 		@include orange-border;

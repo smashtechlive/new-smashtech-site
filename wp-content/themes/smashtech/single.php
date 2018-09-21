@@ -21,7 +21,7 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<p><?= $post->excerpt ?></p>
+							<p><?= $post->post_excerpt ?></p>
 						</div>
 					</div>
 					<div class="row">

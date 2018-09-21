@@ -29,7 +29,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col">
-								<h2>FIND YOUR OPPORTUNITY</h2>
+								<h2 class="text-center">FIND YOUR OPPORTUNITY</h2>
 							</div><!-- .col -->
 						</div>
 

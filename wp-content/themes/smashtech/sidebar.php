@@ -19,7 +19,7 @@
 						 					
 							 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
 							 				<p class="post-date"><small>'.$date->format("F j, Y").'</small></p>
-							 				<p class="loop-title">' . $the_query->post->post_title . '</p>
+							 				<h5 class="loop-title">' . $the_query->post->post_title . '</h5>
 							 				
 							 			</a>
 									</li>';
