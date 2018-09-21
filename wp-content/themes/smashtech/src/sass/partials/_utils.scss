@@ -41,3 +41,10 @@
 .full-width {
   width: 100%;
 }
+
+.orange-border {
+  display: inline-block;
+  &:after {
+    @include orange-border;
+  }
+}

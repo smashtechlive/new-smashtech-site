@@ -6,19 +6,20 @@
 
 // For fixed-top navbar
 body {
-	padding-top: 56px;
+	padding-top: 65px;
 }
 h1 {
 	font-family: $roboto;
 	font-size: 3rem;
+	color: $black;
 }
 h2 {
 	font-weight: bold;
 	font-size: 2rem;
 	color: $black;
-	font-weight: $condensed;
+	font-family: $condensed;
 }
-h2,h3,h4,h5,h6 {
+h3,h4,h5,h6 {
 	font-family: $roboto;
 	color: $black;
 }

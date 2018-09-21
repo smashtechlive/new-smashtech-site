@@ -1,13 +1,23 @@
+			<div class="footer-top">
+				<div class="container">
+					<div class="row align-self-center">
+						<div class="col text-center ">
+							WANT TO BE PART OF SOMETHING GREAT?
+							<p class="align-self-center"><a href="/" class="btn btn-yellow">View open positions</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- footer -->
 			<footer class="footer">
-				<div class="container">
-					<div class="text-center p-2">
-						<!-- copyright -->
-						<p class="copyright">
-							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-						</p>
-						<!-- /copyright -->
-					</div><!-- /.row -->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid">
+							2015-2018 Smashtech. All rights reserved.
+						</div><!-- .col -->
+					</div>
 				</div><!-- /.container -->
 			</footer>
 			<!-- /footer -->
@@ -18,14 +28,7 @@
 		<?php wp_footer(); ?>
 
 		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
+		
 
 	</body>
 </html>

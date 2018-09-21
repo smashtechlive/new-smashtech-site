@@ -8,6 +8,7 @@
 	h1 {
 		padding-top: 150px;
 		display: inline-block;
+		color: #fff;
 		&:after {
 			content: '';
 			width: 50%;
@@ -34,7 +35,15 @@
 	&.small {
 		min-height: 350px; 
 	}
+	&.swiper-hero {
+		.swiper-slide {
+			min-height: 600px;
+		}
+	}
 }
+
+
+
 
 .page-builder {
 	.img-fluid {
