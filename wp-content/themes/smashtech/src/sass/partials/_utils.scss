@@ -48,3 +48,8 @@
     @include orange-border;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background: #404040 !important;
+  opacity: 1 !important;
+}

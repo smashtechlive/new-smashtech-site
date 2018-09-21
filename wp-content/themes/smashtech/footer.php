@@ -1,9 +1,9 @@
 			<div class="footer-top">
 				<div class="container">
-					<div class="row align-self-center">
-						<div class="col text-center ">
-							WANT TO BE PART OF SOMETHING GREAT?
-							<p class="align-self-center"><a href="/" class="btn btn-yellow">View open positions</a></p>
+					<div class="row ">
+						<div class="col text-center align-self-center">
+							<p>WANT TO BE PART OF <br>SOMETHING GREAT?</p>
+							<p class="align-self-center"><a href="/" class="btn btn-yellow">View open positions ></a></p>
 						</div>
 					</div>
 				</div>

@@ -7,7 +7,6 @@ footer {
 	background: #000;
 	color: #fff;
 	padding: 10px 0;
-	margin-top: 20px;
 	div {
 		color: #fff;
 	}
@@ -16,5 +15,11 @@ footer {
 .footer-top {
 	background: url('http://localhost:8888/smashtech/wp-content/themes/smashtech/img/footer-top.jpg') no-repeat top center;
 	min-height: 400px;
-	
+	.row {
+		height: 400px;
+		p {
+			color: #fff;
+			font-size: 40px;
+		}
+	}
 }

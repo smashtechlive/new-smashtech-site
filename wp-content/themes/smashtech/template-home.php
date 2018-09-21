@@ -98,7 +98,7 @@
 					  				$bg_color = ($counter % 2 == 0) ? 'grey-bg' : '';
 					  				$counter++;
 					  	?>
-					  	<div class="container-fluid <?= $bg_color ?>">
+					  	<div class="container-fluid <?= $bg_color ?> jobs-section">
 					    	<div class="row">
 					    		<div class="col text-center">
 					    			<h2 class="text-center orange-border"><?= $title ?></h2>
@@ -150,7 +150,7 @@
 									while ( $the_query->have_posts() ) {
 										$the_query->the_post();
 										//pr($the_query->post);
-										echo '<div class="col">
+										echo '<div class="col-md-3">
 										 				<a href="'.$the_query->post->guid.'">
 											 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
 											 				<p class="loop-title">' . $the_query->post->post_title . '</p>

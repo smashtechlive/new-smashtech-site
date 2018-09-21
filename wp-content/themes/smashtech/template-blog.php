@@ -30,6 +30,7 @@
 						<p><a href="<?= $featured_blog->guid ?>" class="btn btn-yellow">read more ></a></p>
 					</div><!-- .col -->
 				</div><!-- .row -->
+				
 			</div>
 		</div><!-- .gre-bg -->
 
