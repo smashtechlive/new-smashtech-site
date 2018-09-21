@@ -1,0 +1,47 @@
+.home {
+	.swiper-hero {
+		.swiper-pagination {
+			.swiper-pagination-bullet {
+				border-radius: 0;
+				width: 50px;
+				background: #ABABAA;
+				opacity: 1;
+			}
+			.swiper-pagination-bullet-active {
+				background: #fff;
+			}
+			
+		}
+	}
+	.blockquote {
+		font-size: 25px;
+		color: #000;
+	  padding: 0 40px;
+	  span {
+	  	color: $smashtech-yellow;
+	  	font-size: 25px;
+	  }
+	}
+	section {
+		border-bottom: 2px solid $smashtech-grey;
+	}
+	.fa-chevron-down {
+		font-size: 40px;
+		color: $smashtech-yellow;
+	}
+	.content-area {
+		line-height: 2;
+	}
+	h2 {
+		font-weight: 100;
+		font-family: $roboto;
+	}
+	h3 {
+		display: inline-block;
+	}
+	.founders {
+		p {
+			margin-top: 0;
+		}
+	}
+}

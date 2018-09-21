@@ -389,6 +389,8 @@ add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comment
 add_action('wp_enqueue_scripts', 'wpbootstrapsass_styles'); // Add Theme Stylesheet
 add_action('init', 'register_wpbootstrapsass_menu'); // Add WP Bootstrap Sass Menu
 add_action('init', 'create_post_type_custom_post_type_demo'); // Add our WP Bootstrap Sass Custom Post Type
+add_action('init', 'create_post_type_smash_tv'); // Add our WP Bootstrap Sass Custom Post Type
+
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'wpbootstrapsass_pagination'); // Add our wpbootstrapsass Pagination
 
@@ -461,6 +463,43 @@ function create_post_type_custom_post_type_demo()
             'search_items' => __('Search Careers', 'wpbootstrapsass'),
             'not_found' => __('No Careers found', 'wpbootstrapsass'),
             'not_found_in_trash' => __('No Careers found in Trash', 'wpbootstrapsass')
+        ),
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'thumbnail'
+        ), // Go to Dashboard Custom WP Bootstrap Sass post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+function create_post_type_smash_tv()
+{
+    register_taxonomy_for_object_type('category', 'smash-tv'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'smash-tv');
+    register_post_type('smash-tv', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Smash TV', 'wpbootstrapsass'), // Rename these to suit
+            'singular_name' => __('Smash TV', 'wpbootstrapsass'),
+            'add_new' => __('Add New', 'wpbootstrapsass'),
+            'add_new_item' => __('Add New Video', 'wpbootstrapsass'),
+            'edit' => __('Edit', 'wpbootstrapsass'),
+            'edit_item' => __('Edit Smash TV', 'wpbootstrapsass'),
+            'new_item' => __('New Smash TV', 'wpbootstrapsass'),
+            'view' => __('View Smash TV', 'wpbootstrapsass'),
+            'view_item' => __('View Smash TV Post', 'wpbootstrapsass'),
+            'search_items' => __('Search Smash TV', 'wpbootstrapsass'),
+            'not_found' => __('No Smash TV found', 'wpbootstrapsass'),
+            'not_found_in_trash' => __('No Smash TV found in Trash', 'wpbootstrapsass')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

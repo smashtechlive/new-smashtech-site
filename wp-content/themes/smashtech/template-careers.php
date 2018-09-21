@@ -33,8 +33,42 @@
 							</div><!-- .col -->
 						</div>
 
-					</div><!-- .cotnainer -->
-				</div><!-- .grey -->
+						<?php
+/*
+						 * Loop through Categories and Display Posts within
+						 */
+						$post_type = 'careers';
+						 
+						// Get all the taxonomies for this post type
+						$taxonomies = get_object_taxonomies( array( 'post_type' => $post_type ) );
+						 
+						foreach( $taxonomies as $taxonomy ) :			 
+					    // Gets every "category" (term) in this taxonomy to get the respective posts
+					    $terms = get_terms( $taxonomy );
+					    foreach( $terms as $term ) : ?>
+					 		<h5><?= $term->name ?></h5>    
+				        	<?php
+						        $args = array(
+			                'post_type' => $post_type,
+			                'posts_per_page' => -1,  //show all posts
+			                'tax_query' => array(
+		                    array(
+	                        'taxonomy' => $taxonomy,
+	                        'field' => 'slug',
+	                        'terms' => $term->slug,
+		                    )
+			                )
+				            );
+						        $posts = new WP_Query($args);
+						        if( $posts->have_posts() ): while( $posts->have_posts() ) : $posts->the_post(); ?>
+											<a href="<?php echo get_permalink(); ?>" title="Read more about <?php echo get_the_title(); ?>">
+												<?php  echo get_the_title(); ?>
+											</a>
+						        <?php endwhile; endif; ?>
+						    <?php endforeach;
+						endforeach; ?>
+					</div><!-- .container -->
+				</div><!-- .list-open-careers -->
 
 
 				<?php endwhile; ?>
