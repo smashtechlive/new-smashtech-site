@@ -1,12 +1,13 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
-import 'aos';
+import AOS from 'aos';
 import Swiper from 'swiper';
 // Can import modules as needed
 // ex. import 'bootstrap/js/dist/dropdown';
 import './sass/style.scss';
 import 'swiper/dist/css/swiper.min.css';
+import 'aos/dist/aos.css';
 'use strict';
 
 (function($) {
