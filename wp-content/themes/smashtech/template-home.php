@@ -14,10 +14,10 @@
 								  				$title = get_sub_field('title');
 								  				$copy = get_sub_field('copy');
 								  	?> 							
-						    			<div class="swiper-slide" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
-			    							<h1><?= $title ?></h1>
-			    							<p><?= $copy ?></p>
-			    							<p><a href="/" class="btn btn-yellow">Learn more ></a></p>
+						    			<div  class="swiper-slide" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
+			    							<h1 data-aos="fade-down"><?= $title ?></h1>
+			    							<p data-aos="fade-right"> <?= $copy ?></p>
+			    							<p data-aos="fade-left"><a href="/" class="btn btn-yellow">Learn more ></a></p>
 			    						</div>
 										<? endwhile; ?>
 								</div><!-- .swiper-wrapper -->
@@ -45,11 +45,11 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-6 content-area">
+						<div class="col-sm-6 content-area " data-aos="fade-right">
 							<? the_content() ?>
 							<p><a href="/" class="btn btn-yellow">About us</a></p>
 						</div><!-- .col -->
-						<div class="col">
+						<div class="col" data-aos="fade-left" data-aos-offset="500">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
 						</div><!-- .col -->
 					</div><!-- .row -->
@@ -63,9 +63,11 @@
 									$branding_title = get_field('brand_title');
 									$brand_copy = get_field('brand_copy');
 								?>
-								<div class="hero" style="background: url('<?= $branding_bg[url] ?>');">
-									<h1><?= $branding_title ?></h1>
-									<p><?= $brand_copy ?></p>
+								<div  class="hero" style="background: url('<?= $branding_bg[url] ?>');">
+									<div data-aos="fade-down" data-aos-offset="300">
+										<h1><?= $branding_title ?></h1>
+										<p><?= $brand_copy ?></p>
+									</div>
 								</div>
 							</div><!-- .col -->
 							
@@ -89,8 +91,8 @@
 
 						<div class="row mt-5">
 							<div class="col text-center">
-								<h2 class="orange-border text-center">FOUNDERS</h2>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid">
+								<h2 class="orange-border text-center" >FOUNDERS</h2>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" data-aos="fade-down" data-aos-offset="200">
 								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
 								<p class="text-center"><small>CEO and Co-Founders</small></p>
 							</div><!-- .col -->
@@ -119,7 +121,7 @@
 							    						$job_title = get_sub_field('job_title');
 							    						$name = get_sub_field('name');
 							    				?>
-						    						<div class="swiper-slide text-center">
+						    						<div data-aos="fade-down" class="swiper-slide text-center">
 						    							<img src="<?= $image[url] ?>" class="img-fluid">
 						    							<p><strong><?= $name ?></strong></p>
 						    							<p><?= $job_title ?></p>

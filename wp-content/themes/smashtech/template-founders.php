@@ -21,7 +21,7 @@
 					<? endif; ?>
 
 				<div class="row">
-					<div class="col text-center content-area">
+					<div class="col text-center content-area " data-aos="fade-down">
 						<? the_content(); ?>
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 			    		$image = get_sub_field('image');
 			    		$content = get_sub_field('content');
 			  ?>
-			    	<li>
+			    	<li data-aos="fade-right">
 			    		<p class="timeline-title"><?= $year ?></p>
 			    		<div class="timeline-img">
 			    			<img src="<?= $image[url] ?>" class="img-fluid">
