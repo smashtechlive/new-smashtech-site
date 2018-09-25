@@ -49,7 +49,7 @@
 							<? the_content() ?>
 							<p><a href="/" class="btn btn-yellow">About us</a></p>
 						</div><!-- .col -->
-						<div class="col" data-aos="fade-left" data-aos-offset="500">
+						<div class="col" data-aos="fade-left" data-aos-delay="500">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
 						</div><!-- .col -->
 					</div><!-- .row -->
@@ -64,7 +64,7 @@
 									$brand_copy = get_field('brand_copy');
 								?>
 								<div  class="hero" style="background: url('<?= $branding_bg[url] ?>');">
-									<div data-aos="fade-down" data-aos-offset="300">
+									<div data-aos="fade-down" data-aos-delay="300">
 										<h1><?= $branding_title ?></h1>
 										<p><?= $brand_copy ?></p>
 									</div>
@@ -92,7 +92,7 @@
 						<div class="row mt-5">
 							<div class="col text-center">
 								<h2 class="orange-border text-center" >FOUNDERS</h2>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" data-aos="fade-down" data-aos-offset="200">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" data-aos="fade-down" data-aos-delay="200">
 								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
 								<p class="text-center"><small>CEO and Co-Founders</small></p>
 							</div><!-- .col -->
