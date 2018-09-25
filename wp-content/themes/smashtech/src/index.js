@@ -1,6 +1,7 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
+import 'aos';
 import Swiper from 'swiper';
 // Can import modules as needed
 // ex. import 'bootstrap/js/dist/dropdown';
@@ -27,5 +28,6 @@ import 'swiper/dist/css/swiper.min.css';
         clickable: true,
       }
     });
-	});
+	 AOS.init();
+  });
 })(jQuery);

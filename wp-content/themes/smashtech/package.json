@@ -25,6 +25,7 @@
     "webpack-cli": "^2.0.14"
   },
   "dependencies": {
+    "aos": "^2.3.3",
     "bootstrap": "^4.1.0",
     "popper.js": "^1.14.3",
     "swiper": "^4.3.5"
