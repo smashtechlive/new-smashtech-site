@@ -28,12 +28,10 @@
 		    </div><!-- .container-fluid -->
 				<? else : endif; ?>
 				<section class="mt-3">
-					<div class="container mb-3">
+					<div class="container mb-3 mt-3">
 						<div class="row">
-							<div class="col-sm-4">
-								<p class="blockquote mt-2">SEE WHY WE ARE <span class="yellow">THE BEST COMPANY</span> TO WORK FOR</p>
-							</div><!-- .col -->
-							<div class="col">
+							<div class="col text-center">
+								<h2 class="">SEE WHY WE ARE THE BEST COMPANY TO WORK FOR</p>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/hp_group.png" class="img-fluid">
 							</div><!-- .col -->
 						</div><!-- .row -->
@@ -74,10 +72,17 @@
 						</div><!-- .row -->
 					</div><!-- .container -->
 
-					<div class="container founders mb-5">
+					<div class="container founders mb-5 mt-5">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="">MEET THE TEAM</h2>
+								<h2 class="">WE ARE A GROUP OF TALENTED INDIVIDUALS:</h2>
+								<p class="text-center">At Smashtech, results speak louder than words and we believe in rewarding performance. There are no egos, no divas, and no room for politics. Only ambitious, talented, A-players who do their best work and love what they do.  </p>
+							</div><!-- .col -->
+						</div><!-- .row -->
+
+						<div class="row">
+							<div class="col text-center">
+								<!--<h2 class="">MEET THE TEAM</h2>-->
 								<i class="fa fa-chevron-down"></i>
 							</div><!-- .col -->
 						</div><!-- .row -->
@@ -116,8 +121,8 @@
 							    				?>
 						    						<div class="swiper-slide text-center">
 						    							<img src="<?= $image[url] ?>" class="img-fluid">
-						    							<p><?= $name ?></p>
-						    							<p><strong><?= $job_title ?></strong></p>
+						    							<p><strong><?= $name ?></strong></p>
+						    							<p><?= $job_title ?></p>
 						    						</div>
 						    					<?	endwhile; ?>
 
