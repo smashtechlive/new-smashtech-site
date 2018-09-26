@@ -7,17 +7,19 @@
 	  	<div class="container-fluid">
 		  	<div class="row">
 		    		<div class="col no-pad">
-		    			<div class="hero swiper-container swiper-hero">
+		    			<div class="hero  swiper-container swiper-hero">
 						    <div class="swiper-wrapper">
 								  	<?  while ( have_rows('hero_slides') ) : the_row(); 
 								  				$bg = get_sub_field('background_image');
 								  				$title = get_sub_field('title');
 								  				$copy = get_sub_field('copy');
 								  	?> 							
-						    			<div  class="swiper-slide" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
-			    							<h1 data-aos="fade-down"><?= $title ?></h1>
-			    							<p data-aos="fade-right"> <?= $copy ?></p>
-			    							<p data-aos="fade-left"><a href="/" class="btn btn-yellow">Learn more ></a></p>
+						    			<div  class=" swiper-slide d-flex" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
+			    							<div data-aos="fade-up" class="align-self-center justify-content-center">
+				    							<h1><?= $title ?></h1>
+				    							<p> <?= $copy ?></p>
+				    							<p><a href="/" class="btn btn-yellow">Learn more ></a></p>
+				    						</div>
 			    						</div>
 										<? endwhile; ?>
 								</div><!-- .swiper-wrapper -->
@@ -45,12 +47,16 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-6 content-area " data-aos="fade-right" >
-							<? the_content() ?>
-							<p><a href="/" class="btn btn-yellow">About us</a></p>
+						<div class="col-sm-6 content-area "  >
+							<div data-aos="fade-right">
+								<? the_content() ?>
+								<p><a href="/" class="btn btn-yellow">About us</a></p>
+							</div>
 						</div><!-- .col -->
-						<div class="col" data-aos="fade-left" data-aos-delay="200">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
+						<div class="col" >
+							<div data-aos="fade-left" data-aos-delay="200">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
+							</div>
 						</div><!-- .col -->
 					</div><!-- .row -->
 				</div><!-- .container -->
@@ -63,8 +69,8 @@
 									$branding_title = get_field('brand_title');
 									$brand_copy = get_field('brand_copy');
 								?>
-								<div  class="hero" style="background: url('<?= $branding_bg[url] ?>');">
-									<div data-aos="fade-up" >
+								<div  class="hero d-flex" style="background: url('<?= $branding_bg[url] ?>');">
+									<div data-aos="fade-up" class="align-self-center justify-content-center">
 										<h1><?= $branding_title ?></h1>
 										<p><?= $brand_copy ?></p>
 									</div>
@@ -91,8 +97,8 @@
 
 						<div class="row mt-5">
 							<div class="col text-center">
-								<h2 class="orange-border text-center" >FOUNDERS</h2>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" data-aos="fade-down">
+								<h2 class="orange-border text-center" data-aos="fade-down">FOUNDERS</h2>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" >
 								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
 								<p class="text-center"><small>CEO and Co-Founders</small></p>
 							</div><!-- .col -->
@@ -108,7 +114,7 @@
 					  	<div class="container-fluid <?= $bg_color ?> jobs-section">
 					    	<div class="row">
 					    		<div class="col text-center">
-					    			<h2 class="text-center orange-border"><?= $title ?></h2>
+					    			<h2 class="text-center orange-border" data-aos="fade-down"><?= $title ?></h2>
 					    		</div>
 					    	</div>
 					    	<? if (have_rows('slide')) : ?>
@@ -145,7 +151,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="mb-5">SEE WHAT'S GOING ON</h2>
+								<h2 class="mb-5" data-aos="fade-down">SEE WHAT'S GOING ON</h2>
 							</div><!-- .col -->
 						</div><!-- .row -->
 						<div class="row">

@@ -6,19 +6,8 @@
 				<!-- section -->
 
 				<? if (have_posts()): while (have_posts()) : the_post(); 
-					$hero = get_field('hero');	
-					if ($hero): ?>
-						<div class="row">
-							<div class="col no-pad">
-								<div class="hero" style="background: url('<?= $hero[image][url] ?>');">
-									<h1><?= $hero[title_label] ?></h1>
-									<p><?= $hero[paragraph_content] ?></p>
-									<i class="fa fa-chevron-down"></i>
-								</div>
-
-							</div><!-- .col -->
-						</div><!-- .row -->
-					<? endif; ?>
+					 
+				include get_template_directory() . '/inc/hero_template_part.php'; ?>
 
 				<div class="row">
 					<div class="col text-center content-area " data-aos="fade-down">

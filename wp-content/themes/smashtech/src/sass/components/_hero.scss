@@ -6,7 +6,6 @@
 	position: relative;
 	background-size: cover;
 	h1 {
-		padding-top: 150px;
 		display: inline-block;
 		color: #fff;
 		&:after {
@@ -39,6 +38,9 @@
 		.swiper-slide {
 			min-height: 600px;
 		}
+	}
+	.align-self-center {
+		width: 100%;
 	}
 }
 

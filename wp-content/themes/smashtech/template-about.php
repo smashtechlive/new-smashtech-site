@@ -6,23 +6,17 @@
 				<!-- section -->
 
 				<? if (have_posts()): while (have_posts()) : the_post(); 
-					$hero = get_field('hero');	
-					if ($hero): ?>
-						<div class="row">
-							<div class="col no-pad">
-								<div class="hero" style="background: url('<?= $hero[image][url] ?>');">
-									<h1><?= $hero[title_label] ?></h1>
-									<p><?= $hero[paragraph_content] ?></p>
-									<i class="fa fa-chevron-down"></i>
-								</div>
-
-							</div><!-- .col -->
-						</div><!-- .row -->
-					<? endif; ?>
+					
+				include get_template_directory() . '/inc/hero_template_part.php'; ?>
 				
+				<div class="row" data-aos="fade-down">
+					<div class="col">
+						<? the_content() ?>
+					</div><!-- .col -->
+				</div>
 
 				<div class="row mission-values">
-					<div class="col-sm-6">
+					<div class="col-sm-6" data-aos="fade-right">
 						
 						<div class="text-block d-flex">
 							<div class="align-self-center">
@@ -32,7 +26,7 @@
 						</div>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/about_left.png" class="img-fluid">
 					</div><!-- .col -->
-					<div class="col-sm-6">
+					<div class="col-sm-6" data-aos="fade-left">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/about_right.png" class="img-fluid">
 						<div class="text-block d-flex">
 							<div class="align-self-center">

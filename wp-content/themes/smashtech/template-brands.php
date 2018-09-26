@@ -6,21 +6,11 @@
 				<!-- section -->
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); $hero = get_field('hero');	
-					if ($hero): ?>
-						<div class="row">
-							<div class="col no-pad">
-								<div class="hero" style="background: url('<?= $hero[image][url] ?>');">
-									<h1><?= $hero[title_label] ?></h1>
-									<p><?= $hero[paragraph_content] ?></p>
-									<i class="fa fa-chevron-down"></i>
-								</div>
-
-							</div><!-- .col -->
-						</div><!-- .row -->
-					<? endif; ?>
+				
+				include get_template_directory() . '/inc/hero_template_part.php'; ?>
 
 				<div class="row locks">
-					<div class="col-sm-4">
+					<div class="col-sm-4" data-aos="fade-right">
 						<div class="lock grey d-flex justify-content-center">
 							<div class="align-self-end">
 								<i class="fa fa-lock"></i>
@@ -30,7 +20,7 @@
 						<h3>CONFIDENTIAL BRAND</h3>
 						<p>Coming Soon</p>
 					</div><!-- .col -->
-					<div class="col-sm-4">
+					<div class="col-sm-4" data-aos="fade-down" data-aos-delay="200">
 						<div class="lock yellow d-flex justify-content-center">
 							<div class="align-self-end ">
 								<i class="fa fa-lock"></i>
@@ -40,7 +30,7 @@
 						<h3>CONFIDENTIAL BRAND</h3>
 						<p>Coming Soon</p>
 					</div><!-- .col -->
-					<div class="col-sm-4">
+					<div class="col-sm-4" data-aos="fade-left" data-aos-delay="400">
 						<div class="lock black d-flex justify-content-center">
 							<div class="align-self-end ">
 								<i class="fa fa-lock"></i>
