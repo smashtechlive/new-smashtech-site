@@ -47,7 +47,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-6 content-area "  >
+						<div class="col-sm-6 content-area">
 							<div data-aos="fade-right">
 								<? the_content() ?>
 								<p><a href="/" class="btn btn-yellow">About us</a></p>
