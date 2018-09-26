@@ -31,7 +31,7 @@
 				    		$content = get_sub_field('content');
 				  ?>
 				    	<li data-aos="fade-right">
-				    		<p class="timeline-title"><?= $year ?></p>
+				    		<h5 class="timeline-title"><?= $year ?></h5>
 				    		<div class="timeline-img">
 				    			<img src="<?= $image[url] ?>" class="img-fluid">
 				    		</div>
