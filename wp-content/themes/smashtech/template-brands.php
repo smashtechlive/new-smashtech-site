@@ -9,6 +9,12 @@
 				
 				include get_template_directory() . '/inc/hero_template_part.php'; ?>
 
+				<div class="row" data-aos="fade-down">
+					<div class="col">
+						<? the_content() ?>
+					</div><!-- .col -->
+				</div>
+
 				<div class="row locks">
 					<div class="col-sm-4" data-aos="fade-right">
 						<div class="lock grey d-flex justify-content-center">

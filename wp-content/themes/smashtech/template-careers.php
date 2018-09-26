@@ -11,8 +11,13 @@
 
 					include get_template_directory() . '/inc/page_builder.php'; ?>
 
-
-
+			<div class="container">
+				<div class="row" data-aos="fade-down">
+					<div class="col">
+						<? the_content() ?>
+					</div><!-- .col -->
+				</div>
+			</div>
 				<div class="list-open-careers">
 					<div class="container">
 						<div class="row">

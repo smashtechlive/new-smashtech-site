@@ -14,8 +14,8 @@
 								  				$title = get_sub_field('title');
 								  				$copy = get_sub_field('copy');
 								  	?> 							
-						    			<div  class=" swiper-slide d-flex" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
-			    							<div data-aos="fade-up" class="align-self-center justify-content-center">
+						    			<div  class="swiper-slide d-flex" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
+			    							<div class="align-self-center justify-content-center">
 				    							<h1><?= $title ?></h1>
 				    							<p> <?= $copy ?></p>
 				    							<p><a href="/" class="btn btn-yellow">Learn more ></a></p>
