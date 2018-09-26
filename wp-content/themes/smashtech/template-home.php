@@ -97,7 +97,11 @@
 						<div class="row mt-5">
 							<div class="col text-center">
 								<h2 class="orange-border text-center" data-aos="fade-down">FOUNDERS</h2>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" >
+								<? if (get_field('founders_image')) { $founders_imgage = get_field('founders_image'); ?>
+									<img src="<?= $founders_imgage[url] ?>" class="img-fluid" >
+								<? } else { ?>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" >
+								<? } ?>
 								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
 								<p class="text-center"><small>CEO and Co-Founders</small></p>
 							</div><!-- .col -->
