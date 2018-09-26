@@ -29,8 +29,8 @@
 		    	</div><!-- .row -->
 		    </div><!-- .container-fluid -->
 				<? else : endif; ?>
-				<section class="mt-3">
-					<div class="container mb-3 mt-3">
+				<div class="mt-5">
+					<div class="container mb-5">
 						<div class="row">
 							<div class="col text-center">
 								<h2 class="">SEE WHY WE ARE THE BEST COMPANY TO WORK FOR</p>
@@ -39,7 +39,7 @@
 						</div><!-- .row -->
 						
 					</div><!-- .container -->
-				</section>
+				</div>
 				<div class="container mt-3 mb-5">
 					<div class="row">
 						<div class="col text-center">
@@ -83,8 +83,7 @@
 					<div class="container founders mb-5 mt-5">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="">WE ARE A GROUP OF TALENTED INDIVIDUALS:</h2>
-								<p class="text-center">At Smashtech, results speak louder than words and we believe in rewarding performance. There are no egos, no divas, and no room for politics. Only ambitious, talented, A-players who do their best work and love what they do.  </p>
+								<?= get_field('copy_section_two') ?>
 							</div><!-- .col -->
 						</div><!-- .row -->
 
