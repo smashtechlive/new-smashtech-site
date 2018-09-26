@@ -1,5 +1,5 @@
 <?php /* Template Name: Blog */ get_header(); ?>
-<?php get_header(); ?>
+
 <main class="blog blog-home">
 	<div class="container-fluid">
 		<div class="row">

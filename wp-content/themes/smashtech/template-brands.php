@@ -1,5 +1,5 @@
 <?php /* Template Name: Brands */ get_header(); ?>
-<?php get_header(); ?>
+
 <main>
 	<div class="container-fluid">
 		

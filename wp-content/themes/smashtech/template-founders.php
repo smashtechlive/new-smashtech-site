@@ -1,5 +1,5 @@
 <?php /* Template Name: Founders */ get_header(); ?>
-<?php get_header(); ?>
+
 <main class="founders">
 	<div class="container-fluid">
 		
