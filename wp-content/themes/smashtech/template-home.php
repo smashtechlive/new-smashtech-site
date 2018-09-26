@@ -127,8 +127,8 @@
 							    						$name = get_sub_field('name');
 							    				?>
 						    						<div  class="swiper-slide text-center">
-						    							<img src="<?= $image[url] ?>" class="img-fluid">
-						    							<p><strong><?= $name ?></strong></p>
+						    							<img src="<?= $image[url] ?>" class="img-fluid drop-shadow">
+						    							<p class="mb-0"><strong><?= $name ?></strong></p>
 						    							<p><?= $job_title ?></p>
 						    						</div>
 						    					<?	endwhile; ?>
