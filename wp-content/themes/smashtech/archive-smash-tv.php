@@ -8,7 +8,7 @@
 					</div>
 				</div>
 			</div><!-- .container-fluid -->
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row">
 					<div class="col">
 						<p><small>SMASH PICK</small></p>
@@ -17,16 +17,16 @@
 				<div class="row">
 					<div class="col">
 						<div class="embed-responsive embed-responsive-16by9">
-						  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+						  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cReHuA_9iU8" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col">
-						<h2><? the_title(); ?></h2>
+						<h2>Be persistent, don't give up | Smashtech 001</h2>
 					</div>
 				</div><!-- .row -->
-				<div class="row">
+				<div class="row mt-2">
 					<div class="col">
 						<? the_content(); ?>
 					</div>

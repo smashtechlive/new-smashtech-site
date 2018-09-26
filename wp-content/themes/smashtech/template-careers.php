@@ -52,17 +52,17 @@
 		                    )
 			                )
 				            );
-						        $posts = new WP_Query($args);
-						        if( $posts->have_posts() ): while( $posts->have_posts() ) : $posts->the_post(); ?>
-											<a href="<?php echo get_permalink(); ?>" title="Read more about <?php echo get_the_title(); ?>">
-												<?php  echo get_the_title(); ?>
+						        $career_posts = new WP_Query($args);
+						        if( $career_posts->have_posts() ): while( $career_posts->have_posts() ) : $career_posts->the_post(); ?>
+											<a href="<?php echo get_permalink(); ?>">
+												<?php echo get_the_title(); ?>
 											</a>
 						        <?php endwhile; endif; ?>
 						    <?php endforeach;
-						endforeach; ?>
+							endforeach; ?>
 					</div><!-- .container -->
 				</div><!-- .list-open-careers -->
-
+				faf
 
 				<?php endwhile; ?>
 
@@ -79,8 +79,7 @@
 				<?php endif; ?>
 
 
-			
-	</div><!-- /.container -->
+testa
 </main>
 <?php get_footer(); ?>
 

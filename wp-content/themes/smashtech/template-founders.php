@@ -1,82 +1,49 @@
 <?php /* Template Name: Founders */ get_header(); ?>
 
 <main class="founders">
-	<div class="container-fluid">
+	
 		
 				<!-- section -->
 
-				<? if (have_posts()): while (have_posts()) : the_post(); 
-					 
-				include get_template_directory() . '/inc/hero_template_part.php'; ?>
-
-				<div class="row">
-					<div class="col text-center content-area " data-aos="fade-down">
-						<? the_content(); ?>
+				<? if (have_posts()): while (have_posts()) : the_post(); ?>
+				<div class="container-fluid">
+					<?include get_template_directory() . '/inc/hero_template_part.php'; ?>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col text-center content-area " data-aos="fade-down">
+							<? the_content(); ?>
+						</div>
 					</div>
+
+					<div class="row">
+						<div class="col">
+							<h2 class="text-center">THE SMASHTECH STORY</h2>
+						</div>
+					</div>
+
+					<ol class="timeline">
+					<? 
+						if ( have_rows('timeline') ):
+				    	while ( have_rows('timeline') ) : the_row(); 
+				    		$year = get_sub_field('year');
+				    		$image = get_sub_field('image');
+				    		$content = get_sub_field('content');
+				  ?>
+				    	<li data-aos="fade-right">
+				    		<p class="timeline-title"><?= $year ?></p>
+				    		<div class="timeline-img">
+				    			<img src="<?= $image[url] ?>" class="img-fluid">
+				    		</div>
+				    		<p class="timeline-content"><?= $content ?></p>
+				    	</li>
+
+		   		<?	endwhile;
+			    	endif; ?>
+					</ol>
 				</div>
 
-				<div class="row">
-					<div class="col">
-						<h2 class="text-center">THE SMASHTECH STORY</h2>
-					</div>
-				</div>
-
-				<ol class="timeline">
-				<? 
-					if ( have_rows('timeline') ):
-			    	while ( have_rows('timeline') ) : the_row(); 
-			    		$year = get_sub_field('year');
-			    		$image = get_sub_field('image');
-			    		$content = get_sub_field('content');
-			  ?>
-			    	<li data-aos="fade-right">
-			    		<p class="timeline-title"><?= $year ?></p>
-			    		<div class="timeline-img">
-			    			<img src="<?= $image[url] ?>" class="img-fluid">
-			    		</div>
-			    		<p class="timeline-content"><?= $content ?></p>
-			    	</li>
-
-	   		<?	endwhile;
-		    	endif; ?>
-				</ol>
-				<? if( have_rows('row') ): ?>
-			  		<div class="page-builder">
-			  	<?  while ( have_rows('row') ) : the_row(); ?>
-			    		
-				    		<div class="row">	
-						    	<? if (have_rows('block')) :
-						    		while (have_rows('block')) : the_row(); 
-						    			if (get_sub_field('media') == 'Image') {
-						    				$image = get_sub_field('image');
-						    				$col = '<img src="'.$image[url].'" class="img-fluid">';
-						    				$dflex = '';
-						    			} else {
-						    				$headline = get_sub_field('headline');
-						    				$body_copy =get_sub_field('body_copy');
-						    				$dflex = 'd-flex';
-						    				$col = 
-						    					'<div class="header-section align-self-center text-center">'.
-							    					'<h2 class="header-border">'.$headline.'</h2>'.
-							    					'<p>'.$body_copy.'</p>'.
-							    				'</div>';
-						    			}
-						    	?>
-						    		<div class="col <?= $dflex ?> no-pad">
-						    			<?= $col ?>
-						    		</div>
-						    	<?	endwhile;
-						    	endif; ?>
-				        </div><!-- .row -->
-				      
-			    <? endwhile; ?>
-			    	</div><!-- .page-builder -->
-					<? else :
-
-			    // no rows found
-			    
-
-			endif; ?>	
+				<? include get_template_directory() . '/inc/page_builder.php'; ?>
 
 				<?php endwhile; ?>
 
@@ -91,10 +58,6 @@
 					<!-- /article -->
 
 				<?php endif; ?>
-
-
-			
-	</div><!-- /.container -->
 </main>
 <?php get_footer(); ?>
 

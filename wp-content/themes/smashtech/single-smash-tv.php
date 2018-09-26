@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+		<? $youtube = get_field('youtube_id'); ?>
 		<div class="tv-single blog">
 			<div class="container-fluid">
 				<div class="row">
@@ -8,7 +9,7 @@
 					</div>
 				</div>
 			</div><!-- .container-fluid -->
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row">
 					<div class="col">
 						<p><small>SMASH PICK</small></p>
@@ -17,11 +18,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="embed-responsive embed-responsive-16by9">
-						  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+						  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<?= $youtube ?>" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mt-2">
 					<div class="col">
 						<h2><? the_title(); ?></h2>
 					</div>
@@ -52,8 +53,7 @@
 										echo '<div class="col-md-3">
 										 				<a href="'.$the_query->post->guid.'">
 											 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
-											 				<p class="loop-title">' . $the_query->post->post_title . '</p>
-											 				<p>Read More >> </p>
+											 				<h5 class="loop-title">' . $the_query->post->post_title . '</h5>
 											 			</a>
 													</div>';
 									}
