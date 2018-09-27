@@ -54,7 +54,7 @@
 								echo '<div class="col" data-aos="fade-down">
 								 				<a href="'.$the_query->post->guid.'">
 									 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
-									 				<h5 class="loop-title">' . $the_query->post->post_title . '</h5>
+									 				<h5 class="loop-title mt-3">' . $the_query->post->post_title . '</h5>
 									 			</a>
 											</div>';
 							}
@@ -76,7 +76,7 @@
 							<a href="<?= $trending_blog->guid ?>">
 								<!--<p class="date"><?= $trending_blog->post_date ?></p>-->
 								<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($trending_blog->ID) ) ?>" class="img-fluid">
-								<h5 class="loop-title"><?= $trending_blog->post_title ?></h5>
+								<h5 class="loop-title mt-3"><?= $trending_blog->post_title ?></h5>
 							</a>
 						</div><!-- .col -->
 					<? } ?>

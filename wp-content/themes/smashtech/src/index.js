@@ -25,7 +25,7 @@ import 'aos/dist/aos.css';
 		
     var swiperHero = new Swiper('.swiper-hero', {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 40,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -34,10 +34,34 @@ import 'aos/dist/aos.css';
     
     var swiper = new Swiper('.swiper-jobs', {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      grabCursor: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          slidesPerGroup: 4,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          slidesPerGroup: 2,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          slidesPerGroup: 1,
+        }
       }
     });
 
