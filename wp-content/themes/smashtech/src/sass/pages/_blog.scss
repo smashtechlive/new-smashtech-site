@@ -27,4 +27,11 @@
 	img {
 		border-radius: 10px;
 	}
+	.latest-blogs {
+		.blog-stories {
+			@include media-breakpoint-down(md) {
+				margin-bottom: 20px;
+			}
+		}
+	}
 }

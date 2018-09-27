@@ -51,13 +51,13 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-6 content-area mobile-1">
-							<div data-aos="fade-right">
+							<div >
 								<? the_content() ?>
 								<p><a href="/" class="btn btn-yellow">About us</a></p>
 							</div>
 						</div><!-- .col -->
 						<div class="col" >
-							<div data-aos="fade-left" data-aos-delay="200">
+							<div >
 								<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
 							</div>
 						</div><!-- .col -->
@@ -73,7 +73,7 @@
 									$brand_copy = get_field('brand_copy');
 								?>
 								<div  class="hero d-flex" style="background: url('<?= $branding_bg[url] ?>') no-repeat top center;">
-									<div data-aos="fade-up" class="align-self-center justify-content-center">
+									<div  class="align-self-center justify-content-center">
 										<h1><?= $branding_title ?></h1>
 										<p><?= $brand_copy ?></p>
 									</div>
@@ -99,7 +99,7 @@
 
 						<div class="row mt-5">
 							<div class="col text-center no-pad">
-								<h2 class="orange-border text-center" data-aos="fade-down">FOUNDERS</h2>
+								<h2 class="orange-border text-center">FOUNDERS</h2>
 								<? if (get_field('founders_image')) { $founders_imgage = get_field('founders_image'); ?>
 									<img src="<?= $founders_imgage[url] ?>" class="img-fluid" >
 								<? } else { ?>
@@ -120,7 +120,7 @@
 					  	<div class="container-fluid <?= $bg_color ?> jobs-section">
 					    	<div class="row">
 					    		<div class="col text-center">
-					    			<h2 class="text-center orange-border" data-aos="fade-down"><?= $title ?></h2>
+					    			<h2 class="text-center orange-border" ><?= $title ?></h2>
 					    		</div>
 					    	</div>
 					    	<? if (have_rows('slide')) : ?>
@@ -157,7 +157,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="mb-5 orange-border" data-aos="fade-down">SEE WHAT'S GOING ON</h2>
+								<h2 class="mb-5 orange-border">SEE WHAT'S GOING ON</h2>
 							</div><!-- .col -->
 						</div><!-- .row -->
 						<div class="row">
