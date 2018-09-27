@@ -5,15 +5,16 @@
 	?>
 		<div class="careers-single">
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col no-pad">
-						<div class="hero small" style="background: url(../../wp-content/themes/smashtech/img/career-top.jpg) no-repeat top center;">
-							<h1>MORE THAN A CAREER A LIFESTYLE</h1>
-						</div>
-					</div><!-- .col -->
-				</div><!-- .row -->
-			</div><!-- .container -->
-
+					<div class="row">
+						<div class="col no-pad">
+							<div class="d-flex hero small" style="background: url(../../wp-content/themes/smashtech/img/careers_header.jpg) no-repeat top center;">
+								<div class="align-self-center justify-content-center">
+									<h1>MORE THAN A CAREER A LIFESTYLE</h1>
+								</div>
+							</div>
+						</div><!-- .col -->
+					</div><!-- .row -->
+				</div><!-- .container -->
 
 			<div class="container">
 					<div class="row post-header">

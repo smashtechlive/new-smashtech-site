@@ -12,6 +12,7 @@ header {
 		background: #fff;
 		padding-left: 0;
 		padding-right: 0;
+		border-bottom: 1px solid $smashtech-grey;
 		.navbar-brand {
 		  @include media-breakpoint-down(md) {
 		  	margin: 0 auto;

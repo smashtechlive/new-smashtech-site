@@ -10,7 +10,7 @@
 					<? include get_template_directory() . '/inc/hero_template_part.php'; ?>
 				</div>
 				<div class="container">
-					<div class="row mt-5" data-aos="fade-down">
+					<div class="row mt-5 text-center" data-aos="fade-down">
 						<div class="col">
 							<? the_content() ?>
 						</div><!-- .col -->
@@ -24,7 +24,7 @@
 									<span>1</span>
 								</div>
 							</div><!-- .lock -->
-							<h3>CONFIDENTIAL BRAND</h3>
+							<h3 class="mt-3">CONFIDENTIAL BRAND</h3>
 							<p>Coming Soon</p>
 						</div><!-- .col -->
 						<div class="col-sm-4" data-aos="fade-down" data-aos-delay="200">
@@ -34,7 +34,7 @@
 									<span>2</span>
 								</div>
 							</div><!-- .lock -->
-							<h3>CONFIDENTIAL BRAND</h3>
+							<h3 class="mt-3">CONFIDENTIAL BRAND</h3>
 							<p>Coming Soon</p>
 						</div><!-- .col -->
 						<div class="col-sm-4" data-aos="fade-left" data-aos-delay="400">
@@ -44,7 +44,7 @@
 									<span>3</span>
 								</div>
 							</div><!-- .lock -->
-							<h3>CONFIDENTIAL BRAND</h3>
+							<h3 class="mt-3">CONFIDENTIAL BRAND</h3>
 							<p>Coming Soon</p>
 						</div><!-- .col -->
 					</div><!-- .row -->
