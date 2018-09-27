@@ -10,7 +10,7 @@
 					<? include get_template_directory() . '/inc/hero_template_part.php'; ?>
 				</div>
 				<div class="container">
-					<div class="row" data-aos="fade-down">
+					<div class="row mt-5" data-aos="fade-down">
 						<div class="col">
 							<? the_content() ?>
 						</div><!-- .col -->
