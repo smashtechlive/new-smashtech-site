@@ -27,7 +27,7 @@ header {
 		}
 		.navbar-collapse {
 			@include media-breakpoint-down(md) {
-				background: rgba(0, 0, 0, 0.8);
+				background: rgba(0, 0, 0, 1);
 				opacity: .8;
 				.nav-link {
 					color: #fff !important;
