@@ -5,7 +5,7 @@
 				<div class="container">
 					<div class="row ">
 						<div class="col text-center align-self-center">
-							<p>WANT TO BE PART OF <br>SOMETHING GREAT?</p>
+							<h1>WANT TO BE PART OF <br>SOMETHING GREAT?</h1>
 							<p class="align-self-center"><a href="/" class="btn btn-yellow">View open positions ></a></p>
 						</div>
 					</div>

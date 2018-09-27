@@ -135,7 +135,7 @@
 							    				?>
 						    						<div  class="swiper-slide text-center">
 						    							<img src="<?= $image[url] ?>" class="img-fluid drop-shadow">
-						    							<p class="mb-0"><strong><?= $name ?></strong></p>
+						    							<p class="mb-0 mt-1"><strong><?= $name ?></strong></p>
 						    							<p class="mb-5"><?= $job_title ?></p>
 						    						</div>
 						    					<?	endwhile; ?>

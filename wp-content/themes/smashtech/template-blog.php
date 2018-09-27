@@ -27,7 +27,9 @@
 					</div><!-- .col -->
 					<div class="col col-sm-6">
 						<p class="post-date"><small><?= $date->format("F j, Y") ?></small></p>
-						<h2><?= $featured_blog->post_title ?></h2>
+						<a href="<?= $featured_blog->guid ?>">
+							<h2><?= $featured_blog->post_title ?></h2>
+						</a>
 						<p><?= $featured_blog->post_excerpt ?></p>
 						<p><a href="<?= $featured_blog->guid ?>" class="btn btn-yellow">read more ></a></p>
 					</div><!-- .col -->
@@ -98,7 +100,7 @@
 					<div class="col col-sm-6" data-aos="fade-left">
 						<h2><?= $smash_pick->post_title ?></h2>
 						<p><?= $smash_pick->post_excerpt ?></p>
-						<p><a href="<?= $smash_pick->guid ?>" class="btn btn-yellow">read more ></a></p>
+						<p><a href="<?= $smash_pick->guid ?>" class="btn btn-yellow">watch video ></a></p>
 					</div><!-- .col -->
 				</div><!-- .row -->
 			</div>

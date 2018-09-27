@@ -19,11 +19,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
+					<!--<div class="row">
 						<div class="col">
 							<p><?= $post->post_excerpt ?></p>
 						</div>
-					</div>
+					</div>-->
 					<div class="row">
 						<div class="col">
 							<div class="sharethis-inline-share-buttons"></div>
