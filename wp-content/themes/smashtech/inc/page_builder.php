@@ -35,7 +35,7 @@
 			    			} else {
 			    				$dflex = 'd-flex';
 			    				$col = 
-			    					'<div class="header-section justify-content-center align-self-center text-center">'.
+			    					'<div class="header-section justify-content-center align-self-center">'.
 				    					'<h2 class="header-border">'.$headline.'</h2>'.
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';
