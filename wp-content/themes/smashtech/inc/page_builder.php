@@ -3,14 +3,17 @@
   	<?  while ( have_rows('row') ) : the_row(); 
   		$container = get_sub_field('container');
   		$background_color = get_sub_field('background_color');
-  		$background_color = 'background: '.$background_color.';';
+  		if( $background_color) {
+  			$background_color = 'background: '.$background_color.';';
+  		}
+  		
   		$row_title = get_sub_field('title');
   		$margin = get_sub_field('margin');
   		$margin = 'mt-'.$margin;
   		$margin_bottom = get_sub_field('margin-bottom');
   		$margin_bottom = 'mb-'.$margin;
   	?>
-	  	<section style="<?= $background_color ?>;" class="<?= $margin.' '.$margin_bottom ?>">
+	  	<section style="<?= $background_color ?>" class="<?= $margin.' '.$margin_bottom ?>">
 		  	<div class="<?= $container ?>">
 		  		<? if ($row_title) { ?>
 		  			<div class="row">
@@ -29,7 +32,7 @@
 		    				$column_width = ($column_width) ? 'col-sm-'.$column_width : 'col no-pad';
 			    			if (get_sub_field('media') == 'Image') {
 			    				$col = '<img src="'.$image[url].'" class="img-fluid img-full" data-aos="fade-left">';
-			    				$dflex = 'order-sm-1';
+			    				$dflex = 'order-1';
 			    			} else if (get_sub_field('media') == 'Content Widget') {
 			    				$col = 
 			    					'<div class="content-widget text-center mb-5">'.
@@ -38,7 +41,7 @@
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';
 			    			} else {
-			    				$dflex = 'd-flex';
+			    				$dflex = 'd-flex order-2';
 			    				$col = 
 			    					'<div class="header-section justify-content-center align-self-center" data-aos="fade-right">'.
 				    					'<h2 class="header-border">'.$headline.'</h2>'.

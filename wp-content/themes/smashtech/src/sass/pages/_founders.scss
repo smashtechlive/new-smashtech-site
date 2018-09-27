@@ -3,6 +3,9 @@
 		.header-section {
 			text-align: left !important;
 			padding-left: 10%;
+			@include media-breakpoint-down(md) {
+				padding-left: 0;
+			}
 			p {
 				padding-left: 0;
 				padding-right: 5%;
