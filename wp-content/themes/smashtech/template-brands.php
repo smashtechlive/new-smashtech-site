@@ -51,10 +51,10 @@
 
 					<div class="row">
 						<div class="col">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/brands_left.jpg" class="img-fluid">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/brands_left.jpg" class="img-fluid" data-aos="fade-right">
 						</div><!-- .col -->
 						<div class="col">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/brands_right.jpg" class="img-fluid">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/brands_right.jpg" class="img-fluid" data-aos="fade-left">
 						</div><!-- .col -->
 					</div><!-- .row -->
 				</div><!-- ..container -->

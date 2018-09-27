@@ -3,11 +3,12 @@
   	<?  while ( have_rows('row') ) : the_row(); 
   		$container = get_sub_field('container');
   		$background_color = get_sub_field('background_color');
+  		$background_color = 'background: '.$background_color.';';
   		$row_title = get_sub_field('title');
   		$margin = get_sub_field('margin');
   		$margin = 'mt-'.$margin;
   	?>
-	  	<section style="background: <?= $background_color ?>;" class="<?= $margin ?>">
+	  	<section style="<?= $background_color ?>;" class="<?= $margin ?>">
 		  	<div class="<?= $container ?>">
 		  		<? if ($row_title) { ?>
 		  			<div class="row">
