@@ -34,8 +34,21 @@
 
 	.list-open-careers {
 		margin-top: 60px;
+		border-top: $bottom-border;
+		padding-top: 30px;
 		a {
 			color: $text-grey;
+			display: block;
+			padding: 15px 0;
+		  border-top: 1px solid #E8E8E8;
+		  border-bottom: 1px solid #E8E8E8;
+			&:hover {
+				color: $smashtech-yellow;
+				text-decoration: none;
+			}
+		}
+		h5 {
+			margin-top: 30px;
 		}
 	}
 	

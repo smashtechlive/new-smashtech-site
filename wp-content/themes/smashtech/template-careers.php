@@ -39,7 +39,9 @@
 			foreach( $taxonomies as $taxonomy ) :			 
 		    // Gets every "category" (term) in this taxonomy to get the respective posts
 		    $terms = get_terms( $taxonomy );
-		    foreach( $terms as $term ) : ?>
+		    foreach( $terms as $term ) : 
+		    	if($term->slug == 'uncategorized') break;
+		    ?>
 		 		<h5><?= $term->name ?></h5>    
 	        	<?php
 			        $args = array(
