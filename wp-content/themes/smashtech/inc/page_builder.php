@@ -29,7 +29,7 @@
 		    				$column_width = ($column_width) ? 'col-sm-'.$column_width : 'col no-pad';
 			    			if (get_sub_field('media') == 'Image') {
 			    				$col = '<img src="'.$image[url].'" class="img-fluid img-full" data-aos="fade-left">';
-			    				$dflex = '';
+			    				$dflex = 'order-sm-1';
 			    			} else if (get_sub_field('media') == 'Content Widget') {
 			    				$col = 
 			    					'<div class="content-widget text-center mb-5">'.

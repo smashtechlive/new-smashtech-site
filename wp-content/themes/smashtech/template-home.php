@@ -56,7 +56,7 @@
 								<p><a href="/" class="btn btn-yellow">About us</a></p>
 							</div>
 						</div><!-- .col -->
-						<div class="col order-first" >
+						<div class="col order-sm-1" >
 							<div data-aos="fade-left" data-aos-delay="200">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
 							</div>
