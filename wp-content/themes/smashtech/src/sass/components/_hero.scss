@@ -80,4 +80,9 @@
 			margin: 20px 0;
 		}
 	}
+	@include media-breakpoint-down(md) {
+		.mobile-1 {
+			order: 1;
+		}
+	}
 }

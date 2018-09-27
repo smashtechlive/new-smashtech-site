@@ -32,7 +32,7 @@
 		    				$column_width = ($column_width) ? 'col-sm-'.$column_width : 'col no-pad';
 			    			if (get_sub_field('media') == 'Image') {
 			    				$col = '<img src="'.$image[url].'" class="img-fluid img-full" data-aos="fade-left">';
-			    				$dflex = 'order-1';
+			    				$dflex = 'mobile-1';
 			    			} else if (get_sub_field('media') == 'Content Widget') {
 			    				$col = 
 			    					'<div class="content-widget text-center mb-5">'.
@@ -41,7 +41,7 @@
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';
 			    			} else {
-			    				$dflex = 'd-flex order-2';
+			    				$dflex = 'd-flex';
 			    				$col = 
 			    					'<div class="header-section justify-content-center align-self-center" data-aos="fade-right">'.
 				    					'<h2 class="header-border">'.$headline.'</h2>'.
