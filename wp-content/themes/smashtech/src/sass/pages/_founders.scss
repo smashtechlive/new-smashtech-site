@@ -99,7 +99,34 @@
 			}
 
 		}
+		@include media-breakpoint-down(md) {
+			
+				padding: 0;
+				li {
+					border-left: 1px solid $smashtech-grey;
+					border-right: none;
+					width: 100%;
+					text-align: left;
+					padding: 40px 0;
+					.timeline-title {
+						margin-bottom: 10px;
+						padding-left: 40px;
+						&:before {
+							content: none;
+						}
+						&:after {
+							left: -15px;
+							top: 0;
+						}
+					}
+					&:nth-child(even) {
+						margin-left:0;
+					}
+				}
+			}
+			
+		
 
-	}
-}
+	}//timeline
+}//founders
 

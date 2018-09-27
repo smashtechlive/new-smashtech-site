@@ -56,7 +56,7 @@
 								<p><a href="/" class="btn btn-yellow">About us</a></p>
 							</div>
 						</div><!-- .col -->
-						<div class="col" >
+						<div class="col order-first" >
 							<div data-aos="fade-left" data-aos-delay="200">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
 							</div>
@@ -72,7 +72,7 @@
 									$branding_title = get_field('brand_title');
 									$brand_copy = get_field('brand_copy');
 								?>
-								<div  class="hero d-flex" style="background: url('<?= $branding_bg[url] ?>');">
+								<div  class="hero d-flex" style="background: url('<?= $branding_bg[url] ?>') no-repeat top center;">
 									<div data-aos="fade-up" class="align-self-center justify-content-center">
 										<h1><?= $branding_title ?></h1>
 										<p><?= $brand_copy ?></p>
@@ -98,7 +98,7 @@
 						</div><!-- .row -->
 
 						<div class="row mt-5">
-							<div class="col text-center">
+							<div class="col text-center no-pad">
 								<h2 class="orange-border text-center" data-aos="fade-down">FOUNDERS</h2>
 								<? if (get_field('founders_image')) { $founders_imgage = get_field('founders_image'); ?>
 									<img src="<?= $founders_imgage[url] ?>" class="img-fluid" >
@@ -157,7 +157,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="mb-5" data-aos="fade-down">SEE WHAT'S GOING ON</h2>
+								<h2 class="mb-5 orange-border" data-aos="fade-down">SEE WHAT'S GOING ON</h2>
 							</div><!-- .col -->
 						</div><!-- .row -->
 						<div class="row">
