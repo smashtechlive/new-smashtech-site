@@ -5,7 +5,7 @@
   		$background_color = get_sub_field('background_color');
   		$row_title = get_sub_field('title');
   		$margin = get_sub_field('margin');
-  		$margin = 'mt-'.$margin.' mb-'.$margin;
+  		$margin = 'mt-'.$margin;
   	?>
 	  	<section style="background: <?= $background_color ?>;" class="<?= $margin ?>">
 		  	<div class="<?= $container ?>">
