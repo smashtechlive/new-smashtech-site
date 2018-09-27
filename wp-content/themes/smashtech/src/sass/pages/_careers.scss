@@ -1,0 +1,42 @@
+
+.careers-single {
+	.post-header {
+		margin-top: 20px; 
+		margin-bottom: 20px;
+		h2 {
+			text-transform: uppercase;
+		}
+		.apply-now {
+			text-align: right;
+			@include media-breakpoint-down(md) {
+				text-align: left;
+			}
+		}
+	}	
+}
+
+.careers {
+	.page-builder {
+		.header-section {
+			.header-border {
+				text-align: left;
+				display: block;
+				&:after {
+					margin: 10px 0 20px 0;
+				}
+			}
+			p {
+				text-align: left;  
+				padding: 0;
+			}
+		}
+	}
+
+	.list-open-careers {
+		margin-top: 60px;
+		a {
+			color: $text-grey;
+		}
+	}
+	
+}

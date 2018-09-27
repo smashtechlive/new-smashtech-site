@@ -5,19 +5,20 @@
 		
 				<!-- section -->
 
-			<?php if (have_posts()): while (have_posts()) : the_post(); $hero = get_field('hero');	
-					
-					include get_template_directory() . '/inc/hero_template_part.php'; 
-
-					include get_template_directory() . '/inc/page_builder.php'; ?>
-
-			<div class="container">
-				<div class="row" data-aos="fade-down">
-					<div class="col">
-						<? the_content() ?>
-					</div><!-- .col -->
+			<?php if (have_posts()): while (have_posts()) : the_post(); $hero = get_field('hero'); ?>
+				<div class="container-fluid">
+					<? include get_template_directory() . '/inc/hero_template_part.php'; ?>
 				</div>
-			</div>
+				<div class="container">
+					<div class="row" data-aos="fade-down">
+						<div class="col">
+							<? the_content() ?>
+						</div><!-- .col -->
+					</div>
+				</div>
+				<? include get_template_directory() . '/inc/page_builder.php'; ?>
+
+			
 				<div class="list-open-careers">
 					<div class="container">
 						<div class="row">
