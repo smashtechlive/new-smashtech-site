@@ -131,5 +131,10 @@
 		
 
 	}//timeline
+	@include media-breakpoint-down(md) {
+		h2 {
+			text-align: left !important;
+		}
+	}
 }//founders
 
