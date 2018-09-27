@@ -4,7 +4,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col no-pad text-center blog-header">
-				Original Smash
+				Original Smash Blog
 			</div>
 		</div>
 	</div><!-- .container-fluid -->
