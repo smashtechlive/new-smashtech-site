@@ -23,7 +23,7 @@
 		    				$column_width = get_sub_field('column_width');
 		    				$column_width = ($column_width) ? 'col-sm-'.$column_width : 'col no-pad';
 			    			if (get_sub_field('media') == 'Image') {
-			    				$col = '<img src="'.$image[url].'" class="img-fluid img-full">';
+			    				$col = '<img src="'.$image[url].'" class="img-fluid img-full" data-aos="fade-left">';
 			    				$dflex = '';
 			    			} else if (get_sub_field('media') == 'Content Widget') {
 			    				$col = 
@@ -35,7 +35,7 @@
 			    			} else {
 			    				$dflex = 'd-flex';
 			    				$col = 
-			    					'<div class="header-section justify-content-center align-self-center">'.
+			    					'<div class="header-section justify-content-center align-self-center" data-aos="fade-right">'.
 				    					'<h2 class="header-border">'.$headline.'</h2>'.
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';
