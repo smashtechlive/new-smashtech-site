@@ -4,8 +4,10 @@
   		$container = get_sub_field('container');
   		$background_color = get_sub_field('background_color');
   		$row_title = get_sub_field('title');
+  		$margin = get_sub_field('margin');
+  		$margin = 'mt-'.$margin.' mb-'.$margin;
   	?>
-	  	<section style="background: <?= $background_color ?>;" class="mt-5 mb-5">
+	  	<section style="background: <?= $background_color ?>;" class="<?= $margin ?>">
 		  	<div class="<?= $container ?>">
 		  		<? if ($row_title) { ?>
 		  			<div class="row">
