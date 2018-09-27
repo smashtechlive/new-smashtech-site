@@ -27,8 +27,8 @@
 			    				$dflex = '';
 			    			} else if (get_sub_field('media') == 'Content Widget') {
 			    				$col = 
-			    					'<div class="content-widget text-center mb-4">'.
-				    					'<img src="'.$image[url].'" class="mx-auto d-block">'.
+			    					'<div class="content-widget text-center mb-5">'.
+				    					'<img src="'.$image[url].'" class="mx-auto d-block img-fluid">'.
 				    					'<h3>'.$headline.'</h3>'.
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';
