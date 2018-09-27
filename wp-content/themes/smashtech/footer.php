@@ -1,4 +1,7 @@
-			<div class="footer-top">
+			<?
+				$footer_bg = (get_field('footer_background')) ? get_field('footer_background') : get_template_directory_uri(). '/img/footer_img.jpg';
+			?>
+			<div class="footer-top" style="background: url('<?= $footer_bg ?>') no-repeat top center;">
 				<div class="container">
 					<div class="row ">
 						<div class="col text-center align-self-center">
@@ -26,9 +29,6 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
-
-		<!-- analytics -->
-		
 
 	</body>
 </html>
