@@ -48,11 +48,17 @@
 	text-align: center;
 	margin-top: 90px;
 	margin-bottom: 50px;
+	@include media-breakpoint-down(md) {
+		margin-top: 30px;
+	}
 	font-family: $roboto;
 	p {
 		margin-bottom: 0;
 	}
 	.lock {
+		@include media-breakpoint-down(md) {
+			margin-top: 20px;
+		}
 		height: 370px;
 	  margin: 0 auto;
 	  font-size: 85px;
