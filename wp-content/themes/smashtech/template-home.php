@@ -13,12 +13,13 @@
 								  				$bg = get_sub_field('background_image');
 								  				$title = get_sub_field('title');
 								  				$copy = get_sub_field('copy');
+								  				$cta = get_sub_field('cta');
 								  	?> 							
 						    			<div  class="swiper-slide d-flex" style="background: url('<?= $bg[url] ?>') no-repeat top center;">
 			    							<div class="align-self-center justify-content-center">
 				    							<h1><?= $title ?></h1>
 				    							<p> <?= $copy ?></p>
-				    							<p><a href="/" class="btn btn-yellow">Learn more ></a></p>
+				    							<p><a href="<?= $cta ?>" class="btn btn-yellow">Learn more ></a></p>
 				    						</div>
 			    						</div>
 										<? endwhile; ?>
@@ -53,7 +54,7 @@
 						<div class="col-sm-6 content-area mobile-1">
 							<div >
 								<? the_content() ?>
-								<p><a href="/" class="btn btn-yellow">About us</a></p>
+								<p><a href="/about" class="btn btn-yellow">About us</a></p>
 							</div>
 						</div><!-- .col -->
 						<div class="col" >
@@ -184,7 +185,7 @@
 						<div class="row">
 							<div class="col">
 								<p class="text-center">
-									<a href="/" class="btn btn-yellow btn-lg">View all stories ></a>
+									<a href="/blog" class="btn btn-yellow btn-lg">View all stories ></a>
 								</p>
 							</div>
 						</div><!-- .row -->
