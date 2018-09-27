@@ -27,7 +27,7 @@
 				</div><!-- .row -->
 				<div class="row ">
 					<div class="col">
-						<? the_content(); ?>
+						<p>Welcome to Smash TV. A series that features and highlights the journey of San Diego’s most prominent and fastest growing company. This is a journey of two men who had a dream, forged a path through a field of doubts, and created an environment that now flourishes with 80+ employees. Let us introduce you to the people and ideas that defy the odds and define the difference.</p>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .conatiner -->
