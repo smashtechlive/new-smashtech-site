@@ -65,7 +65,7 @@
 								  </div>
 								  <div class="form-group">
 								    <label for="exampleInputPassword1">Message</label>
-								    <input type="textarea" class="form-control" id="exampleInputPassword1" placeholder="">
+								    <textarea rows="3" class="form-control" id="exampleInputPassword1" placeholder=""></textarea>
 								  </div>
 								  <div class="form-group">
 								    <label for="exampleInputEmail1">Your name</label>
