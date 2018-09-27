@@ -37,7 +37,12 @@
   text-transform: uppercase;
   padding: 6px 20px;
   font-weight: bold;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
 }
+
 
 .full-width {
   width: 100%;
