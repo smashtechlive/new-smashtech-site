@@ -21,7 +21,7 @@
 		    				$body_copy =get_sub_field('body_copy');
 		    				$image = get_sub_field('image');
 		    				$column_width = get_sub_field('column_width');
-		    				$column_width = ($column_width) ? 'col-'.$column_width : 'col no-pad';
+		    				$column_width = ($column_width) ? 'col-sm-'.$column_width : 'col no-pad';
 			    			if (get_sub_field('media') == 'Image') {
 			    				$col = '<img src="'.$image[url].'" class="img-fluid">';
 			    				$dflex = '';
