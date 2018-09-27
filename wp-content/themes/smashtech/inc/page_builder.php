@@ -28,7 +28,7 @@
 			    			} else if (get_sub_field('media') == 'Content Widget') {
 			    				$col = 
 			    					'<div class="content-widget text-center mb-5">'.
-				    					'<img src="'.$image[url].'" class="mx-auto d-block img-fluid">'.
+				    					'<img src="'.$image[url].'" class="mx-auto d-block img-fluid mb-3">'.
 				    					'<h3>'.$headline.'</h3>'.
 				    					'<p>'.$body_copy.'</p>'.
 				    				'</div>';

@@ -13,6 +13,10 @@
 			</div><!-- .col -->
 		</div>
 	</div>
+
+	<? include get_template_directory() . '/inc/page_builder.php'; ?>
+
+	
 	<div class="container-fluid">
 		<div class="row mission-values">
 			<div class="col-sm-6" data-aos="fade-right">
