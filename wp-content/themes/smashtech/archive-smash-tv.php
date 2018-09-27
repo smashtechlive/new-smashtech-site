@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<div class="tv-single blog">
 			<div class="container-fluid">
 				<div class="row">
@@ -21,12 +20,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mt-2">
 					<div class="col">
 						<h2>Be persistent, don't give up | Smashtech 001</h2>
 					</div>
 				</div><!-- .row -->
-				<div class="row mt-2">
+				<div class="row ">
 					<div class="col">
 						<? the_content(); ?>
 					</div>
@@ -66,17 +65,5 @@
 
 				
 		</div><!-- .careers-single -->
-		<?php endwhile; ?>
-
-		<?php else: ?>
-
-					<!-- article -->
-		<article>
-
-			<h1><?php _e( 'Sorry, nothing to display.', 'smashtech' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
+		
 <?php get_footer(); ?>
