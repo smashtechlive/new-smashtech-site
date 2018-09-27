@@ -27,6 +27,7 @@
 						if ( have_rows('timeline') ):
 				    	while ( have_rows('timeline') ) : the_row(); 
 				    		$year = get_sub_field('year');
+				    		$year = ($year == '') ? '&nbsp;' : $year;
 				    		$image = get_sub_field('image');
 				    		$content = get_sub_field('content');
 				  ?>
