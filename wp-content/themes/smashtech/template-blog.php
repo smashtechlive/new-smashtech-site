@@ -73,9 +73,11 @@
 				<div class="row">
 					<? foreach ($trending_blogs as $trending_blog) { ?>
 						<div class="col col-sm-6" data-aos="fade-left">
-							<!--<p class="date"><?= $trending_blog->post_date ?></p>-->
-							<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($trending_blog->ID) ) ?>" class="img-fluid">
-							<h5 class="loop-title"><?= $trending_blog->post_title ?></h5>
+							<a href="<?= $trending_blog->guid ?>">
+								<!--<p class="date"><?= $trending_blog->post_date ?></p>-->
+								<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($trending_blog->ID) ) ?>" class="img-fluid">
+								<h5 class="loop-title"><?= $trending_blog->post_title ?></h5>
+							</a>
 						</div><!-- .col -->
 					<? } ?>
 					
