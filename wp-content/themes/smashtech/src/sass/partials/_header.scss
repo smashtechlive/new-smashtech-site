@@ -4,7 +4,9 @@
  */
 
 header {
-	
+	@include media-breakpoint-down(md) {
+		padding-bottom: 0;
+	}
 	.navbar-brand {
 		max-width: 200px;
 	}
@@ -27,12 +29,16 @@ header {
 		}
 		.navbar-collapse {
 			@include media-breakpoint-down(md) {
-				background: rgba(0, 0, 0, 1);
+				background: #fff;
 				opacity: .8;
-				.nav-link {
-					color: #fff !important;
-					padding: 20px 30px;
+				li {
+					border-bottom: $bottom-border;
+					.nav-link {
+						color: $black !important;
+						padding: 20px 30px;
+					}
 				}
+				
 			}
 			
 		}

@@ -50,13 +50,13 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-6 content-area">
+						<div class="col-sm-6 content-area mobile-1">
 							<div data-aos="fade-right">
 								<? the_content() ?>
 								<p><a href="/" class="btn btn-yellow">About us</a></p>
 							</div>
 						</div><!-- .col -->
-						<div class="col order-sm-1" >
+						<div class="col" >
 							<div data-aos="fade-left" data-aos-delay="200">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/IDEA.png" class="img-fluid">
 							</div>
