@@ -108,7 +108,9 @@
 						</a>
 					</div><!-- .col -->
 					<div class="col-sm-6 mt-3" data-aos="fade-left">
-						<h2><?= $smash_pick->post_title ?></h2>
+						<a href="<?= $smash_pick->guid ?>">
+							<h2><?= $smash_pick->post_title ?></h2>
+						</a>
 						<p><?= $smash_pick->post_excerpt ?></p>
 						<p><a href="<?= $smash_pick->guid ?>" class="btn btn-yellow">watch video ></a></p>
 					</div><!-- .col -->
