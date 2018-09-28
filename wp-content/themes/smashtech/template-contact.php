@@ -61,7 +61,7 @@
 	  						<form>
 								  <div class="form-group">
 								    <label for="exampleInputEmail1">Your email address</label>
-								    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+								    <input type="email" class="form-control" id="exampleInputEmail1">
 								  </div>
 								  <div class="form-group">
 								    <label for="exampleInputPassword1">Message</label>
@@ -69,7 +69,7 @@
 								  </div>
 								  <div class="form-group">
 								    <label for="exampleInputEmail1">Your name</label>
-								    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+								    <input type="text" class="form-control" id="exampleInputEmail1">
 								  </div>
 								  <button type="submit" class="btn btn-yellow">Submit</button>
 								</form>
