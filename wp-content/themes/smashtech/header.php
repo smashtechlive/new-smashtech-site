@@ -27,11 +27,6 @@
 	<body <?php body_class(); ?>>
 
 
-	<style>
-		p,div,span {
-			font-size: <?= $_GET['font-size'] ?>px !important;
-		}
-	</style>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-522S8CG"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

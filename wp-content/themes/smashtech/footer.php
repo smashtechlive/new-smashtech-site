@@ -18,6 +18,11 @@
 					<div class="row">
 						<div class="col-sm-12 text-center">
 							<span>
+								<? if (get_field('logo', 'option')) { 
+									$logo = get_field('logo', 'option');
+									pr($logo);
+								?>
+								<? } ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid" style="margin-right: 20px;">
 							</span>
 							<span>2015-<?= date("Y") ?> Smashtech. All rights reserved.</span>
