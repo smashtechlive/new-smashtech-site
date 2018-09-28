@@ -5,9 +5,6 @@
  */
 
 // For fixed-top navbar
-html { 
-	font-size: 62.5%; /* 10px browser default */
-}
 body {
 	padding-top: 65px;
 }
@@ -39,7 +36,7 @@ h3,h4,h5,h6 {
 }
 
 p, div, span, ul, li {
-	font-size: 1.8rem;
+	font-size: 18px;
 	font-family: $roboto;
 	color: $text-grey; 
 }
