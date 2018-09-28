@@ -107,7 +107,7 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" >
 								<? } ?>
 								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
-								<p class="text-center"><small>CEO and Co-Founders</small></p>
+								<p class="text-center">CEO and Co-Founders</p>
 							</div><!-- .col -->
 						</div><!-- .row -->
 					</div><!-- .container -->
@@ -136,7 +136,7 @@
 							    				?>
 						    						<div  class="swiper-slide text-center">
 						    							<img src="<?= $image[url] ?>" class="img-fluid drop-shadow">
-						    							<p class="mb-0 mt-1"><strong><?= $name ?></strong></p>
+						    							<p class="mb-0 mt-2"><strong><?= $name ?></strong></p>
 						    							<p class="mb-5"><?= $job_title ?></p>
 						    						</div>
 						    					<?	endwhile; ?>
@@ -185,7 +185,7 @@
 						<div class="row">
 							<div class="col">
 								<p class="text-center">
-									<a href="/blog" class="btn btn-yellow btn-lg">View all stories ></a>
+									<a href="/blog" class="btn btn-yellow">View all stories ></a>
 								</p>
 							</div>
 						</div><!-- .row -->
