@@ -15,7 +15,6 @@
 				</section>
 				<!-- /section -->
 			</div><!-- /.col-md-8 -->
-		<?php get_sidebar(); ?>
 		</div><!-- /.row -->
 	</div><!-- /.container -->
 </main>
