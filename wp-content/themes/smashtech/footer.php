@@ -16,24 +16,25 @@
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-sm-6">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid" style="margin-right: 20px;">
-							2015-2018 Smashtech. All rights reserved.
-						</div><!-- .col -->
-					
-						<div class="col-sm-6">
-							<div class="pull-left">
+						<div class="col-sm-12 text-center">
+							<span>
+								<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid" style="margin-right: 20px;">
+							</span>
+							<span>2015-<?= date("Y") ?> Smashtech. All rights reserved.</span>
+							
+							<span>
 								<span style="color: #fff;">Featured In</span>
 								<img src="<?php echo get_template_directory_uri(); ?>/img/featured.png" class="img-fluid" style="margin-left: 10px;">
-							</div>
-							<div class="social pull-left">
+							</span>
+							<span>
 								<a href="https://facebook.com" target="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/Ig.png" class="img-fluid" style="margin-left: 10px; width: 30px;">
 								</a>
 								<a heff="https://instagram.com" taget="_blank">
 									<img src="<?php echo get_template_directory_uri(); ?>/img/Fb.png" class="img-fluid" style="margin-left: 10px; width: 30px;">
 								</a>
-							</div>
+							</span>
+
 						</div><!-- .col -->
 					</div>
 				</div><!-- /.container -->

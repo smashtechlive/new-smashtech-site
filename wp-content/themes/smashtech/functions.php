@@ -541,4 +541,21 @@ function pr($var) {
   echo "<pre>".print_r($var, 1)."</pre>";
 }
 
+
+/*------------------------------------*\
+    Theme Options
+\*------------------------------------*/
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page(array(
+        'page_title'    => 'Smashtech Theme Settings',
+        'menu_title'    => 'Global Settings',
+        'menu_slug'     => 'theme-global-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
+
 ?>
