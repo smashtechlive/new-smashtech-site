@@ -20,24 +20,39 @@
 							<span>
 								<? if (get_field('logo', 'option')) { 
 									$logo = get_field('logo', 'option');
-									pr($logo);
 								?>
+									<img src="<?= $logo[url] ?>" class="img-fluid" style="margin-right: 20px;">
+								<? } else { ?>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid" style="margin-right: 20px;">
 								<? } ?>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/smash-footer-logo.png" class="img-fluid" style="margin-right: 20px;">
 							</span>
-							<span>2015-<?= date("Y") ?> Smashtech. All rights reserved.</span>
+							<? if (get_field('copyright', 'option')) { ?>
+								<span><?= get_field('copyright', 'option') ?></span>
+							<? } else { ?>
+								<span>2015-<?= date("Y") ?> Smashtech. All rights reserved.</span>
+							<? } ?>
 							
+							<? if (get_field('featured', 'option')) { 
+								$featured = get_field('featured', 'option');
+							?>
+								<span><img src="<?= $featured[url] ?>" class="img-fluid"></span>
+							<? } else { ?>
+								<span>
+									<span style="color: #fff;">Featured In</span>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/featured.png" class="img-fluid" style="margin-left: 10px;">
+								</span>
+							<? } ?>
 							<span>
-								<span style="color: #fff;">Featured In</span>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/featured.png" class="img-fluid" style="margin-left: 10px;">
-							</span>
-							<span>
-								<a href="https://facebook.com" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/Ig.png" class="img-fluid" style="margin-left: 10px; width: 30px;">
-								</a>
-								<a heff="https://instagram.com" taget="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/Fb.png" class="img-fluid" style="margin-left: 10px; width: 30px;">
-								</a>
+								<? 
+									if (have_rows('social', 'option')) :
+				    				while (have_rows('social', 'option')) : the_row(); 
+				    					$link = get_sub_field('link');
+				    					$icon = get_sub_field('icon');
+				    		?>
+				    			<a href="<?= $link ?>" target="_blank">
+										<img src="<?= $icon[url] ?>" class="img-fluid" style="margin-left: 10px;">
+									</a>
+								<? endwhile; endif; ?>
 							</span>
 
 						</div><!-- .col -->
