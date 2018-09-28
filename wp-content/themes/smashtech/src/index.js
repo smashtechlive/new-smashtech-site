@@ -31,6 +31,37 @@ import 'aos/dist/aos.css';
         clickable: true,
       }
     });
+
+    var swiperHero = new Swiper('.swiper-smash', {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          slidesPerGroup: 4,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          slidesPerGroup: 2,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          slidesPerGroup: 1,
+        }
+      }
+    });
     
     var swiper = new Swiper('.swiper-jobs', {
       slidesPerView: 4,

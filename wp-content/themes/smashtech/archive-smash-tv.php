@@ -40,25 +40,32 @@
 					</div><!-- .row -->
 
 					<div class="row">
-						<?
-								// The Query
-								$the_query = new WP_Query( array( 'posts_per_page' => 4, 'post_type' => 'smash-tv' ));
-								// The Loop
-								if ( $the_query->have_posts() ) {						
-									while ( $the_query->have_posts() ) {
-										$the_query->the_post();
-										//pr($the_query->post);
-										echo '<div class="col-md-3">
-										 				<a href="'.$the_query->post->guid.'">
-											 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
-											 				<h5 class="mt-3 loop-title">' . $the_query->post->post_title . '</h5>
-											 				<p>Read More >> </p>
-											 			</a>
-													</div>';
-									}
-									wp_reset_postdata();
-								} 
-							?>
+						<div class="col">
+							<div class="swiper-container swiper-smash">
+							  <div class="swiper-wrapper">
+									<?
+											// The Query
+										$the_query = new WP_Query( array( 'posts_per_page' => -1, 'post_type' => 'smash-tv' ));
+										// The Loop
+										if ( $the_query->have_posts() ) {						
+											while ( $the_query->have_posts() ) {
+												$the_query->the_post();
+												//pr($the_query->post);
+												echo '<div class="swiper-slide">
+												 				<a href="'.$the_query->post->guid.'">
+													 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
+													 				<h5 class="mt-3 loop-title">' . $the_query->post->post_title . '</h5>
+													 				<p>Read More >> </p>
+													 			</a>
+															</div>';
+											}
+											wp_reset_postdata();
+										} 
+									?>
+								</div><!-- .swiper-wrapper -->
+								<div class="swiper-pagination"></div>
+							</div><!-- .swiper-smash -->
+						</div><!-- .col -->
 					</div><!-- .row -->
 				</div><!-- .container -->		
 			</section>
