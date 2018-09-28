@@ -64,6 +64,13 @@
 						} 
 					?>
 				</div><!-- .row -->
+				<div class="row">
+					<div class="col">
+						<p>
+							<a href="/blog/content" class="btn btn-yellow">View all</a>
+						</p>
+					</div><!-- .col -->
+				</div><!-- .row -->
 			</div><!-- .container-->
 		</div><!-- .blog-section -->
 

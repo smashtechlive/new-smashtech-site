@@ -55,7 +55,7 @@
 												 				<a href="'.$the_query->post->guid.'">
 													 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
 													 				<h5 class="mt-3 loop-title">' . $the_query->post->post_title . '</h5>
-													 				<p>Read More >> </p>
+													 				<p>watch video >> </p>
 													 			</a>
 															</div>';
 											}
