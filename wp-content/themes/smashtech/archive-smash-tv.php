@@ -53,7 +53,10 @@
 												//pr($the_query->post);
 												echo '<div class="swiper-slide">
 												 				<a href="'.$the_query->post->guid.'">
-													 				<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
+													 				<div class="play-container">
+													 					<img src="'.get_template_directory_uri().'/img/play_button.png" class="play-button">
+													 					<img src="'.wp_get_attachment_url( get_post_thumbnail_id($the_query->post->ID) ).'" class="img-fluid">
+													 				</div>
 													 				<h5 class="mt-3 loop-title">' . $the_query->post->post_title . '</h5>
 													 				<p>watch video >> </p>
 													 			</a>

@@ -35,10 +35,13 @@
 		}
 	}
 	.play-container {
+		position: relative;
 		.play-button {
 			position: absolute;
-			  top: 35%;
-  		left: 43%;
+			top: 50%;
+  		left: 50%;
+  		margin-top: -37px;
+  		margin-left: -37px;
 		}
 	}
 }
