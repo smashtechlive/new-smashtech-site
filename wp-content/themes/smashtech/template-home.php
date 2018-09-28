@@ -25,6 +25,8 @@
 			    						</div>
 										<? endwhile; ?>
 								</div><!-- .swiper-wrapper -->
+							    <div class="swiper-button-next swiper-button-white"></div>
+    							<div class="swiper-button-prev swiper-button-white"></div>
 								<div class="swiper-pagination"></div>
 							</div><!-- .swiper-container -->
 		    		</div><!-- .col -->

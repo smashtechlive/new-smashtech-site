@@ -1,5 +1,11 @@
 .home {
 	.swiper-hero {
+		.swiper-slide {
+			background-size: cover !important;
+		}
+		.swiper-button-next, .swiper-button-prev {
+			fill: #fff;
+		}
 		.swiper-pagination {
 			.swiper-pagination-bullet {
 				border-radius: 0;
