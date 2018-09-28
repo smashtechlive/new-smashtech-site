@@ -66,7 +66,7 @@
 				</div><!-- .row -->
 				<div class="row">
 					<div class="col">
-						<p>
+						<p class="text-center">
 							<a href="/blog/content" class="btn btn-yellow">View all</a>
 						</p>
 					</div><!-- .col -->
