@@ -66,6 +66,8 @@
 										} 
 									?>
 								</div><!-- .swiper-wrapper -->
+								<div class="swiper-button-next swiper-button-black"></div>
+  							<div class="swiper-button-prev swiper-button-black"></div>
 								<div class="swiper-pagination"></div>
 							</div><!-- .swiper-smash -->
 						</div><!-- .col -->

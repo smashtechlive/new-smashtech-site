@@ -44,6 +44,10 @@ import 'aos/dist/aos.css';
         el: '.swiper-pagination',
         clickable: true,
       },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       breakpoints: {
         1024: {
           slidesPerView: 4,
@@ -76,6 +80,7 @@ import 'aos/dist/aos.css';
         el: '.swiper-pagination',
         clickable: true,
       },
+
       grabCursor: true,
       breakpoints: {
         1024: {
