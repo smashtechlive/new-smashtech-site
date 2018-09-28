@@ -40,7 +40,11 @@ p, div, span, ul, li {
 	font-family: $roboto;
 	color: $text-grey; 
 }
-
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
 main {
 	margin-bottom: 30px;
 }
