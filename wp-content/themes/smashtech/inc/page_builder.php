@@ -19,8 +19,10 @@
 		  		<? if ($row_title) { ?>
 		  			<div class="row">
 		  				<div class="col">
-		  					<h2 class="text-center row-title"><?= $row_title ?></h2>
-		  					<p class="text-center"><?= $section_copy ?></p>
+		  					<div class="row-title text-center">
+			  					<h2><?= $row_title ?></h2>
+			  					<p><?= $section_copy ?></p>
+			  				</div>
 		  				</div>
 		  			</div>
 		  		<? } ?>	    	
