@@ -12,7 +12,7 @@
   		$margin = 'mt-'.$margin;
   		$margin_bottom = get_sub_field('margin-bottom');
   		$margin_bottom = 'mb-'.$margin;
-  		$section_copy = get_field('section_copy');
+  		$section_copy = get_sub_field('section_copy');
   	?>
 	  	<section style="<?= $background_color ?>" class="<?= $margin.' '.$margin_bottom ?>">
 		  	<div class="<?= $container ?>">

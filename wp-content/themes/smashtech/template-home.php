@@ -106,7 +106,7 @@
 								<? } else { ?>
 									<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" >
 								<? } ?>
-								<h5 class="text-center mb-0">OMAR & ANWAR</h5>
+								<h5 class="text-center mb-0 mt-2">OMAR & ANWAR</h5>
 								<p class="text-center">CEO and Co-Founders</p>
 							</div><!-- .col -->
 						</div><!-- .row -->
