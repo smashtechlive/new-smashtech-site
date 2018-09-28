@@ -4,7 +4,7 @@
 		<article>
 			<a href="<?= $post->guid?>">
 				<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($post->ID) )?>" class="img-fluid">
-				<h5 class="loop-title mt-3">' . $post->post_title . '</h5>
+				<h5 class="loop-title mt-3"><?= $post->post_title ?></h5>
 				<p>Read More >> </p>
 			</a>
 		</article>

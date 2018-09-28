@@ -2,20 +2,18 @@
 <main>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col">
 				<!-- section -->
-				<section>
+					<section>
+						<h1 class="page-header mt-5"><?php _e( 'Archives', 'wpbootstrapsass' ); ?></h1>
+						<div class="row">
+							<?php get_template_part('loop'); ?>
 
-					<h1 class="page-header"><?php _e( 'Latest Posts', 'wpbootstrapsass' ); ?></h1>
-
-					<?php get_template_part('loop'); ?>
-
-					<?php get_template_part('pagination'); ?>
-
-				</section>
+							<?php get_template_part('pagination'); ?>
+						</div>
+					</section>
 				<!-- /section -->
 			</div><!-- /.col-md-8 -->
-			<?php get_sidebar(); ?>
 		</div><!-- /.row -->
 	</div><!-- /.container -->
 </main>

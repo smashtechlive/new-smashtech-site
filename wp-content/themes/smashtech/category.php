@@ -5,7 +5,7 @@
 			<div class="col">
 				<!-- section -->
 				<section>
-
+					test
 					<h1 class="page-header"><?php _e( 'Archives', 'wpbootstrapsass' ); ?></h1>
 					<div class="row">
 						<?php get_template_part('loop'); ?>
