@@ -35,6 +35,7 @@ import 'aos/dist/aos.css';
     var swiperHero = new Swiper('.swiper-smash', {
       slidesPerView: 4,
       spaceBetween: 40,
+      slidesPerGroup: 4,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
