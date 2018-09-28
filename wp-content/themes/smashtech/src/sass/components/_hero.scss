@@ -47,6 +47,10 @@
 	&.swiper-hero {
 		.swiper-slide {
 			min-height: 600px;
+			i {
+				position: relative;
+				bottom: 0;
+			}
 		}
 	}
 	.align-self-center {

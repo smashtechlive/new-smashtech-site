@@ -20,6 +20,7 @@
 				    							<h1><?= $title ?></h1>
 				    							<p> <?= $copy ?></p>
 				    							<p><a href="<?= $cta ?>" class="btn btn-yellow">Learn more ></a></p>
+													<i class="fa fa-chevron-down"></i>
 				    						</div>
 			    						</div>
 										<? endwhile; ?>
@@ -45,11 +46,7 @@
 					</div><!-- .container -->
 				</div>
 				<div class="container mt-3 mb-5">
-					<div class="row">
-						<div class="col text-center">
-							<i class="fa fa-chevron-down"></i>
-						</div>
-					</div>
+					
 					<div class="row">
 						<div class="col-sm-6 content-area mobile-1">
 							<div >
@@ -102,9 +99,9 @@
 							<div class="col text-center no-pad">
 								<h2 class="orange-border text-center">FOUNDERS</h2>
 								<? if (get_field('founders_image')) { $founders_imgage = get_field('founders_image'); ?>
-									<img src="<?= $founders_imgage[url] ?>" class="img-fluid" >
+									<img src="<?= $founders_imgage[url] ?>" class="img-fluid box-shadow">
 								<? } else { ?>
-									<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid" >
+									<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid box-shadow" >
 								<? } ?>
 								<h5 class="text-center mb-0 mt-2">OMAR & ANWAR</h5>
 								<p class="text-center">CEO and Co-Founders</p>
