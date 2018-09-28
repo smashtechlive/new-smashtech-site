@@ -72,4 +72,13 @@
 			border-radius: 8px;
 		}
 	}
+	.content-area {
+		h2 {
+			display: inline-block;
+			&:after {
+				@include orange-border;
+				margin-left: 0;
+			}
+		}
+	}
 }
