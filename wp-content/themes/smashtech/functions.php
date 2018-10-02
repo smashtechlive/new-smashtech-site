@@ -542,6 +542,20 @@ function pr($var) {
 }
 
 
+function is_mobile() {
+  $useragent=$_SERVER['HTTP_USER_AGENT'];
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+
+
+
+
 /*------------------------------------*\
     Theme Options
 \*------------------------------------*/

@@ -1,6 +1,10 @@
 <? 
   $hero = get_field('hero');	
-	if ($hero): ?>
+	if ($hero): 
+		if (is_mobile()) {
+			$hero[image][url] = $hero[mobile_image][url];
+		}
+	?>
 		<div class="row">
 			<div class="col no-pad">
 				<div class="d-flex hero" style="background: url('<?= $hero[image][url] ?>') top center no-repeat;">
