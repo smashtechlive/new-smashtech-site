@@ -75,7 +75,7 @@
 								<div  class="hero d-flex" style="background: url('<?= $branding_bg[url] ?>') no-repeat top center;">
 									<div  class="align-self-center justify-content-center">
 										<h1><?= $branding_title ?></h1>
-										<p><?= $brand_copy ?></p>
+										<p class="text-24"><?= $brand_copy ?></p>
 									</div>
 								</div>
 							</div><!-- .col -->
@@ -126,7 +126,7 @@
 					    	<? if (have_rows('slide')) : ?>
 					    		<div class="row">
 					    			<div class="col">
-					    				<div style="position: relative;">
+					    				<div class="relative" style="position: relative;">
 								    		<div class="swiper-container swiper-jobs">
 											    <div class="swiper-wrapper">
 								    				<?	while (have_rows('slide')) : the_row(); 

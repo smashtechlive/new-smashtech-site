@@ -8,7 +8,7 @@
 	</div>
 	<div class="container">
 		<div class="row mt-5" data-aos="fade-down">
-			<div class="col">
+			<div class="col text-24">
 				<? the_content() ?>
 			</div><!-- .col -->
 		</div>

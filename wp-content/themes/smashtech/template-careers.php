@@ -11,7 +11,7 @@
 	</div>
 	<div class="container mt-5">
 		<div class="row" data-aos="fade-down">
-			<div class="col text-center">
+			<div class="col text-center text-24">
 				<? the_content() ?>
 			</div><!-- .col -->
 		</div>
