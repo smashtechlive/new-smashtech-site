@@ -21,7 +21,7 @@
 		  				<div class="col">
 		  					<div class="row-title text-center">
 			  					<h2><?= $row_title ?></h2>
-			  					<p><?= $section_copy ?></p>
+			  					<p class="mb-0"><?= $section_copy ?></p>
 			  				</div>
 		  				</div>
 		  			</div>
