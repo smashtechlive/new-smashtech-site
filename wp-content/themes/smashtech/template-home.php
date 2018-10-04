@@ -19,7 +19,7 @@
 			    							<div class="align-self-center justify-content-center">
 				    							<h1><?= $title ?></h1>
 				    							<p> <?= $copy ?></p>
-				    							<p><a href="<?= $cta ?>" class="btn btn-yellow">Learn more ></a></p>
+				    							<p><a href="<?= $cta ?>" class="btn btn-yellow"><?= get_sub_field('cta_label') ?></a></p>
 													<i class="fa fa-chevron-down"></i>
 				    						</div>
 			    						</div>
@@ -106,7 +106,7 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/img/founders.png" class="img-fluid box-shadow" >
 								<? } ?>
 								<h5 class="text-center mb-0 mt-2">OMAR & ANWAR</h5>
-								<p class="text-center">CEO and Co-Founders</p>
+								<p class="text-center"><?= get_field('founders_title') ?></p>
 							</div><!-- .col -->
 						</div><!-- .row -->
 					</div><!-- .container -->
@@ -126,23 +126,28 @@
 					    	<? if (have_rows('slide')) : ?>
 					    		<div class="row">
 					    			<div class="col">
-							    		<div class="swiper-container swiper-jobs">
-										    <div class="swiper-wrapper">
-							    				<?	while (have_rows('slide')) : the_row(); 
-							    						$image = get_sub_field('image');
-							    						$job_title = get_sub_field('job_title');
-							    						$name = get_sub_field('name');
-							    				?>
-						    						<div  class="swiper-slide text-center">
-						    							<img src="<?= $image[url] ?>" class="img-fluid drop-shadow">
-						    							<p class="mb-0 mt-2"><strong><?= $name ?></strong></p>
-						    							<p class="mb-5"><?= $job_title ?></p>
-						    						</div>
-						    					<?	endwhile; ?>
+					    				<div style="position: relative;">
+								    		<div class="swiper-container swiper-jobs">
+											    <div class="swiper-wrapper">
+								    				<?	while (have_rows('slide')) : the_row(); 
+								    						$image = get_sub_field('image');
+								    						$job_title = get_sub_field('job_title');
+								    						$name = get_sub_field('name');
+								    				?>
+							    						<div  class="swiper-slide text-center">
+							    							<img src="<?= $image[url] ?>" class="img-fluid drop-shadow">
+							    							<p class="mb-0 mt-2"><strong><?= $name ?></strong></p>
+							    							<p class="mb-5"><?= $job_title ?></p>
+							    						</div>
+							    					<?	endwhile; ?>
 
-							    			</div><!-- swiper-wrapper -->
-							    			<div class="swiper-pagination"></div>
-							    		</div><!-- .swiper-container -->
+								    			</div><!-- swiper-wrapper -->
+								    			
+								    			<div class="swiper-pagination"></div>
+									    		<div class="swiper-button-next swiper-button-black jobs-next"></div>
+		  										<div class="swiper-button-prev swiper-button-black jobs-prev"></div>
+								    		</div><!-- .swiper-container -->
+							    		</div>
 							    	</div><!-- .col -->
 								  </div><!-- .row -->
 							 	<? endif; ?>

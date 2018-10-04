@@ -24,7 +24,7 @@
 									<span>1</span>
 								</div>
 							</div><!-- .lock -->
-							<h3 class="mt-3">CONFIDENTIAL BRAND</h3>
+							<h3 class="mt-3">BRAND</h3>
 							<p>Coming Soon</p>
 						</div><!-- .col -->
 						<div class="col-sm-4" data-aos="fade-down" data-aos-delay="200">
@@ -34,7 +34,7 @@
 									<span>2</span>
 								</div>
 							</div><!-- .lock -->
-							<h3 class="mt-3">CONFIDENTIAL BRAND</h3>
+							<h3 class="mt-3">BRAND</h3>
 							<p>Coming Soon</p>
 						</div><!-- .col -->
 						<div class="col-sm-4" data-aos="fade-left" data-aos-delay="400">
@@ -44,7 +44,7 @@
 									<span>3</span>
 								</div>
 							</div><!-- .lock -->
-							<h3 class="mt-3">CONFIDENTIAL BRAND</h3>
+							<h3 class="mt-3">BRAND</h3>
 							<p>Coming Soon</p>
 						</div><!-- .col -->
 					</div><!-- .row -->

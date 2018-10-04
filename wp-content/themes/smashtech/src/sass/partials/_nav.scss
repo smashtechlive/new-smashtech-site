@@ -14,6 +14,8 @@ li.dropdown:hover > .dropdown-menu {
 	
 	.nav-link {
 		@include media-breakpoint-up(md) {
+			padding-right: 1rem !important;
+			padding-left: 1rem !important;
 			&:after {
 				content: '';
 				height: 5px;

@@ -59,11 +59,6 @@
 					</div>
 				</div><!-- .row -->
 
-				<div class="row">
-					<div class="col">
-						SHARE
-					</div>
-				</div><!-- .row -->
 			
 
 			</div><!-- .container -->

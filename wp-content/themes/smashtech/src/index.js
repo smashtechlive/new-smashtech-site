@@ -80,7 +80,10 @@ import 'aos/dist/aos.css';
         el: '.swiper-pagination',
         clickable: true,
       },
-
+      navigation: {
+        nextEl: '.jobs-next',
+        prevEl: '.jobs-prev',
+      },
       grabCursor: true,
       breakpoints: {
         1024: {

@@ -14,9 +14,9 @@
 
 			<!-- footer -->
 			<footer class="footer">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 text-center">
+						<div class="col-sm-6">
 							<span>
 								<? if (get_field('logo', 'option')) { 
 									$logo = get_field('logo', 'option');
@@ -31,7 +31,8 @@
 							<? } else { ?>
 								<span>2015-<?= date("Y") ?> Smashtech. All rights reserved.</span>
 							<? } ?>
-							
+						</div>
+						<div class="col-sm-6 text-right">
 							<? if (get_field('featured', 'option')) { 
 								$featured = get_field('featured', 'option');
 							?>
