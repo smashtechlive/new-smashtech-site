@@ -2,7 +2,8 @@
   $hero = get_field('hero');	
 	if ($hero): 
 		if (is_mobile()) {
-			$hero[image][url] = $hero[mobile_image][url];
+			$hero[image][url] = ($hero[mobile_image][url]) ? $hero[mobile_image][url] : $hero[image][url];
+
 		}
 	?>
 		<div class="row">

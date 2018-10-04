@@ -10,6 +10,10 @@ footer {
 	div, span {
 		color: #fff;
 		font-size: 13px;
+		@include media-breakpoint-down(md) {
+			display: block;
+			text-align: center;
+		}
 	}
 	.pull-left {
 		float: left;

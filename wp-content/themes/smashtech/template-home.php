@@ -83,7 +83,7 @@
 						</div><!-- .row -->
 					</div><!-- .container -->
 
-					<div class="container founders mb-5 mt-5">
+					<div class="container mb-5 mt-5">
 						<div class="row">
 							<div class="col text-center">
 								<?= get_field('copy_section_two') ?>
