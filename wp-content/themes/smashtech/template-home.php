@@ -50,7 +50,7 @@
 				<div class="container mt-3 mb-5">
 					
 					<div class="row">
-						<div class="col-sm-6 content-area mobile-1">
+						<div class="col-sm-6 content-area">
 							<div >
 								<? the_content() ?>
 								<p><a href="/about" class="btn btn-yellow">About us</a></p>
