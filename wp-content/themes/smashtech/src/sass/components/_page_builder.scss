@@ -1,0 +1,36 @@
+.page-builder {
+	.img-full {
+		width: 100%;
+	}
+	.header-section {
+		text-align: left !important;
+		padding-left: 10%;
+		@include media-breakpoint-down(md) {
+			padding-left: 0;
+		}
+		p {
+			padding-left: 0;
+			padding-right: 5%;
+		}
+		.header-border {
+			font-size: 42px;
+			&:after {
+				margin: 10px 0 20px 0;
+			}
+		}
+	}
+	.row-title {
+		padding: 30px 0;
+	}
+	.content-widget {
+		h2 {
+			display: block;
+			margin: 20px 0;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.mobile-1 {
+			order: 1;
+		}
+	}
+}

@@ -1,4 +1,16 @@
 .swiper-smash {
+	width: 90%;
+	&.swiper-container {
+		position: initial;
+		.swiper-button-prev {
+			left: -10px;
+			top: 35%;
+		}
+		.swiper-button-next {
+			right: -10px;
+			top: 35%;
+		}
+	}
 	.swiper-slide {
 		margin-bottom: 10px;
 	}
