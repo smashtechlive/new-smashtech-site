@@ -99,11 +99,17 @@
 		}
 	}
 	.content-area {
+		@include media-breakpoint-down(md) {
+			text-align: center;	
+		}
 		h2 {
 			display: inline-block;
 			&:after {
 				@include orange-border;
 				margin-left: 0;
+				@include media-breakpoint-down(md) {
+					margin-left: auto;
+				}
 			}
 		}
 	}
